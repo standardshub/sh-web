@@ -1,0 +1,42 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+
+@import "./vendors/bootstrap/bootstrap.min.css";
+@import "./vendors/fontawesome/css//all.min.css";
+@import "./vendors/flat-icon/font/flaticon.css";
+@import "./vendors/owl-carousel/owl.theme.default.min.css";
+@import "./vendors/owl-carousel/owl.carousel.min.css";
+@import "./vendors/nice-select/nice-select.css";
+
+/* font family
+	============================================================================================ */
+  $title-font: {{ site.title_font_family }}, sans-serif;
+  $text-font: {{ site.text_font_family }}, sans-serif;                    
+  
+  
+  /* color variables
+    ============================================================================================ */
+  $title-color: {{ site.title_color }};
+  $text-color: {{ site.text_color }};
+  
+  $logo-height: {{site.logo_height}};
+  $nav-text-color: {{ site.nav_text_color }};
+  $nav-active-color:{{ site.nav_text_active_color}};
+  $nav-transition-bg: {{site.nav_transition_background_color}};
+  $primary-color: {{ site.primary_color }};
+  $secondary-color: {{site.secondary_color}};
+  
+  
+  // $black: #242429;
+  $link-color: {{ site.link_color }};
+  $white: #fff;
+  
+  
+  /* google fonts
+    ============================================================================================ */
+  @import url({{site.google_font}});
+  
+  
+@import "standard-hub-style";
