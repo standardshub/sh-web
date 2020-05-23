@@ -80,7 +80,7 @@ h3, .h3 {
 }
 
 .bg-gray {
-  background-color: #f8f8ff;
+  background-color: #edfdff;
 }
 
 .pb-90px {
@@ -956,7 +956,7 @@ h3, .h3 {
 /* section intro end
 	============================================================================================ */
 .service-card {
-  background: #f8f8ff;
+  background: #edfdff;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -1109,7 +1109,7 @@ h3, .h3 {
   width: 68px;
   height: 68px;
   border-radius: 50%;
-  background-color: #ebebff;
+  background-color: #edfdff;
   opacity: .5;
   position: absolute;
   bottom: -263px;
@@ -1306,7 +1306,7 @@ h3, .h3 {
 }
 
 .search-wrapper {
-  background: #f8f8ff;
+  background: #edfdff;
   padding: 30px 10px;
   text-align: center;
 }

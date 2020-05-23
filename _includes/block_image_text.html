@@ -1,0 +1,27 @@
+<section class="magic-ball magic-ball-sm magic-ball-about">
+    {% if include.fluid == 0 %} 
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 mb-4 mb-md-0 ">
+            <img class="img-fluid" src="{{ include.image }}" alt="">
+        </div>
+        <div class="col-lg-6 col-md-6 pt-4 pb-4 align-self-center about-content">
+          <h2>{{ include.title }}</h2>
+          <p>{{ include.paragraph }}</p>
+          <a class="button" href="{{ include.button_url }}">{{ include.button_lable }}</a>
+        </div>
+      </div>
+    </div>
+    {% else %} 
+    <div class="row">
+        <div class="col-lg-6  col-md-6  mb-4 mb-md-0">
+            <img class="img-fluid" src="{{ include.image }}" alt="">
+        </div>
+        <div class="col-lg-6 col-md-6 pr-5 pt-4 pb-4  align-self-center about-content">
+          <h2>{{ include.title }}</h2>
+          <p>{{ include.paragraph }}</p>
+          <a class="button" href="{{ include.button_url }}">{{ include.button_lable }}</a>
+        </div>
+      </div>
+    {% endif %}
+  </section> 

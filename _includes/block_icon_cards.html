@@ -1,0 +1,26 @@
+<section class="section-margin">
+    <div class="container">
+        {% if include.header %} 
+          <div class="section-intro text-center pb-90px">
+            <img class="section-intro-img" src="{{include.header.image}}" alt="">
+            <h2>{{include.header.title}}</h2>
+            <p>{{include.header.paragraph}}</p>
+          </div>
+          {% endif %} 
+      <div class="row">
+        {% for item in include.cards %}
+        <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 pb-4">
+            <div class="service-card text-center">
+              <div class="service-card-img">
+                <img class="img-fluid" src="{{item.image}}" alt="">
+              </div>
+              <div class="service-card-body">
+                <h3>{{item.title}}</h3>
+                <p>{{ item.paragraph }}</p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>

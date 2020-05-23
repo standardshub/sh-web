@@ -2,28 +2,53 @@
 layout: default
 ---
 
-<div class="home">
+
   {%- if page.title -%}
   <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
   <!-- ================Hero Banner Area Start =================-->
-  <section class="hero-banner magic-ball">
+  <section class="hero-banner magic-ball mb-5" style="background-color:{{page.tagline.background_color}};">
     <div class="container">
-
-      <div class="row align-items-center text-center text-md-left">
-        <div class="col-md-6 col-lg-5 mb-5 mb-md-0">
-          <h1>Travel More To Discover Yourself</h1>
-          <p>Air seed winged lights saw kind whales in sixth dont seas dron image so fish all tree meat dont there is seed winged lights saw kind whales in sixth dont seas dron image so fish all tree meat dont there </p>
-          <a class="button button-hero mt-4" href="#">Get Started</a>
+      <div class="row align-items-center text-center">
+        <div class="col-12">
+          {%- if page.tagline.line1 -%}
+        <h3 {% if page.tagline.line1_color %}
+            style="color:{{page.tagline.line1_color}}" 
+            {%- endif -%}
+        >{{ page.tagline.line1 }}</h4>
+          {%- endif -%}
+          {%- if page.tagline.line2 -%}
+          <h1 {% if page.tagline.line1_color %}
+            style="color:{{page.tagline.line2_color}}" 
+            {%- endif -%}
+          >{{ page.tagline.line2 }}</h1>
+          {%- endif -%}
+          {%- if page.tagline.description -%}
+          <p   {% if page.tagline.description_color %}
+              style="color:{{page.tagline.description_color}}" 
+              {%- endif -%}
+          >{{ page.tagline.description }}</p>
+          {%- endif -%}
+         
         </div>
       </div>
     </div>
   </section>
   <!--================Hero Banner Area End ================= -->
-
-  {{ content }}
-
+ <!-- ================Blocks Area Start =================-->
+    {% for item in page.blocks %}
+      {% include block.html block=item %}  
+    {% endfor %}
+ <!-- ================Blocks Area End =================-->
+  <!-- <section class="section-margin generic-margin">
+    <div class="container">
+      {{ content }}
+    </div>
+   
+  </section>
+  <section class="bg-gray section-padding magic-ball magic-ball-about">
+    <div class="container">
   {%- if site.posts.size > 0 -%}
   <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
   <ul class="post-list">
@@ -42,8 +67,10 @@ layout: default
     </li>
     {%- endfor -%}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
   {%- endif -%}
-
 </div>
+</section> -->
+ 
+
+
+

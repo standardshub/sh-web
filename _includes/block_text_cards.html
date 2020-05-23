@@ -1,0 +1,28 @@
+<section class="magic-ball magic-ball-sm magic-ball-about">
+    <div class="container">
+        {% if include.header %} 
+        <div class="section-intro text-center pb-90px">
+          <img class="section-intro-img" src="{{include.header.image}}" alt="">
+          <h2>{{include.header.title}}</h2>
+          <p>{{include.header.paragraph}}</p>
+        </div>
+        {% endif %} 
+      <div class="row">
+        {% for item in include.cards %}
+         <div class=" {% case include.card_per_line %}
+        {% when 3 %}
+            col-4
+        {% when 4 %}
+            col-3
+        {% else %}
+            col-6
+         {% endcase %} col-xs-12 pt-4 pb-4 align-self-center about-content">
+  
+            <h2>{{ item.title }}</h2>
+            <p>{{ item.paragraph }}</p>
+            <a class="button" href="{{ item.button_url }}">{{ item.button_lable }}</a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section> 

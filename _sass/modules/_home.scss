@@ -1,6 +1,6 @@
 
 .service-card{
-  background: #f8f8ff;
+  background: #edfdff;
   @include transition;
 
   &:hover{
@@ -151,7 +151,7 @@
     width: 68px;
     height: 68px;
     border-radius: 50%;
-    background-color: rgb(235, 235, 255);
+    background-color: #edfdff;
     opacity: .5;
     position: absolute;
     bottom: -263px;
@@ -366,7 +366,7 @@
 
 
 .search-wrapper{
-  background: #f8f8ff;
+  background: #edfdff;
   padding: 30px 10px;
   text-align: center;
 

@@ -1,0 +1,31 @@
+<section class="section-padding bg-gray">
+    <div class="container">
+      {% if include.header %} 
+      <div class="section-intro text-center pb-90px">
+        <img class="section-intro-img" src="{{include.header.image}}" alt="">
+        <h2>{{include.header.title}}</h2>
+        <p>{{include.header.paragraph}}</p>
+      </div>
+      {% endif %} 
+      <div class="row">
+        {% for item in include.cards %}
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <div class="card-blog">
+              <img class="card-img rounded-0" src="{{item.image}}" alt="">
+              <div class="card-blog-body">
+                <a href="#">
+                  <h4>{{item.title}}</h4>
+                </a>
+                <!-- <ul class="card-blog-info">
+                  <li><i class="ti-notepad"></i></span>Jan 03, 2018</li>
+                  <li><i class="ti-comments-smiley"></i></span>03 Comments</li>
+                </ul> -->
+                <p>{{ item.paragraph }}</p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+     
+      </div>
+    </div>
+  </section>
