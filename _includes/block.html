@@ -18,10 +18,26 @@
   {% when "block_text" %}
       {% include block_text.html  title=include.block.title paragraph=include.block.paragraph
           image = include.block.image image_size=include.block.image_size button_lable=include.block.button_lable button_url=include.block.button_url %}
+  {% when "block_text_fluid" %}
+  {% include block_text.html  title=include.block.title paragraph=include.block.paragraph
+      image = include.block.image image_size=include.block.image_size button_lable=include.block.button_lable button_url=include.block.button_url
+      fluid=1 %}
   {% when "block_icon_cards" %}
       {% include block_icon_cards.html header=include.block.header  cards=include.block.cards card_per_line=include.block.card_per_line   %}
   {% when "block_text_cards" %}
       {% include block_text_cards.html header=include.block.header  cards=include.block.cards card_per_line=include.block.card_per_line  %}
   {% when "block_image_cards" %}
       {% include block_image_cards.html header=include.block.header cards=include.block.cards card_per_line=include.block.card_per_line  %}
+  {% when "block_image" %}
+  {% include block_image.html title=include.block.title paragraph=include.block.paragraph
+    image = include.block.image  button_lable=include.block.button_lable button_url=include.block.button_url 
+    fluid=0 %}
+  {% when "block_image_fluid" %}
+  {% include block_image.html title=include.block.title paragraph=include.block.paragraph
+    image = include.block.image button_lable=include.block.button_lable button_url=include.block.button_url 
+    fluid=1 %}
+  {% when "block_image_banner" %}
+  {% include block_image.html title=include.block.title paragraph=include.block.paragraph
+    image = include.block.image button_lable=include.block.button_lable button_url=include.block.button_url 
+  %}
 {% endcase %}

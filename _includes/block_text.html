@@ -1,10 +1,14 @@
-<section class="bg-gray section-padding magic-ball magic-ball-testimonial pb-xl-5">
+{% if include.fluid == 1 %}
+  {% assign fluidClassName = "bg-gray section-padding magic-ball magic-ball-testimonial" %}
+{% else %}
+  {% assign fluidClassName = "bg-gray section-padding magic-ball magic-ball-testimonial pb-xl-5" %}
+{% endif %}
+<section class="{{ fluidClassName }}">
     <div class="container">
       <div class="section-intro text-center pb-90px">
-      <img class="section-intro-img" src="{{ include.image }}" alt="" 
         {%- if include.image_size -%}
-            style="width:{{include.image_size}}"
-        {%- endif -%}>
+          <img class="section-intro-img" src="{{ include.image }}" alt="" style="width:{{include.image_size}}">
+        {%- endif -%}
         <h2>{{ include.title }}</h2>
         <p>{{ include.paragraph }}</p>
       </div>

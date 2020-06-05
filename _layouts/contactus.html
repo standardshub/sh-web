@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<section style="padding-top: 140px;padding-bottom: 90px;">
+ <!-- ================Blocks Area Start =================-->
+ {% for item in page.blocks_before %}
+ {% include block.html block=item %}  
+{% endfor %}
+<!-- ================Blocks Area End =================-->
+</section>
+<section class="section-margin generic-margin">
+  <div class="container">
+    {{ content }}
+  </div>
+</section>
+
+ <!-- ================Blocks Area Start =================-->
+ {% for item in page.blocks_after %}
+ {% include block.html block=item %}  
+{% endfor %}
+<!-- ================Blocks Area End =================-->
