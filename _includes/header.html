@@ -13,7 +13,8 @@
 
         {%- if page_paths -%}
         {%- endif -%}
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -22,15 +23,36 @@
           <ul class="nav navbar-nav menu_nav justify-content-end">
 
             {%- for path in page_paths -%}
-            {%- assign item = site.pages | where: "path", path | first -%}
-            <li class="nav-item {% if item.url==page.url %}active{% endif %}">
-              <a class="nav-link" href="{{ item.url | relative_url }}">
-                {{ item.title | escape }}
-              </a>
+                {%- assign item = site.pages | where: "path", path | first -%}
+                {%- if item.parent -%}
+                  <li class="nav-item submenu dropdown {% if item.url==page.url %}active{% endif %}">
+                    <a href="{{ item.url | relative_url }}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                      aria-expanded="false">{{ item.title | escape }}</a>
+                    <ul class="dropdown-menu">
+                {%- elsif item.subnav -%}
+                  <li class="nav-item {% if item.url==page.url %}active{% endif %}"><a class="nav-link" href="{{ item.url | relative_url }}">{{ item.title | escape }}</a></li>
+                  {%- assign itemIndex = forloop.index -%}
+                  {%- assign itemIndex = itemIndex | plus: 1 %}
+                  {%- if item.[itemIndex] -%}
+                    {%- if item.[itemIndex].subnav != true -%}
+                        </ul>
+                      </li>
+                    {%- endif -%}
+                  {% else %}
+                        </ul>
+                      </li>
+                  {%- endif -%}
+                {% else %}
+                  <li class="nav-item {% if item.url==page.url %}active{% endif %}">
+                    <a class="nav-link" href="{{ item.url | relative_url }}">
+                      {{ item.title | escape }}
+                    </a>
+                  </li>
+                {%- endif -%}
+
+
 
               {%- endfor -%}
-
-
           </ul>
 
           <!-- <div class=" nav-right text-center text-lg-right py-4 py-lg-0">

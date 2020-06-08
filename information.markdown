@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Blog
+title: information
 permalink: /information/blog/
-order: 5
-subnav: true
+order: 4
+parent: true
 ---
 
 this is blog page

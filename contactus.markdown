@@ -2,7 +2,7 @@
 layout: page_banner
 title: Contact us
 permalink: /contactus/
-order: 6
+order: 7
 blocks_before:
   - layout: "block_image_banner"
     image: /assets/images/banner/banner-contactus.jpg
