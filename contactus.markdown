@@ -1,5 +1,5 @@
 ---
-layout: contactus
+layout: page_banner
 title: Contact us
 permalink: /contactus/
 order: 6

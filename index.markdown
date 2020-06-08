@@ -28,7 +28,7 @@ blocks:
     paragraph: The Standard Hubs Work Program (WP) employs a lightweight, working group-focused process where members can create a new work item in less than a week. Working Groups (WGs) define their own process, tools, partnerships and cadence.
     image: assets/images/home/section-icon.png
   - layout: "block_icon_cards"
-    card_per_line: 4
+    card_per_line: 3
     cards:
       - title: Communications
         paragraph: The COM Working Group is responsible for service layer standardization of communications related technologies, including areas such as Messaging, Push-to-talk over Cellular, Presence, Contact Information and Spam Reporting.

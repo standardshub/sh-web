@@ -24,6 +24,8 @@
       fluid=1 %}
   {% when "block_icon_cards" %}
       {% include block_icon_cards.html header=include.block.header  cards=include.block.cards card_per_line=include.block.card_per_line   %}
+  {% when "block_icon_cards_fluid" %}
+      {% include block_icon_cards.html header=include.block.header  cards=include.block.cards card_per_line=include.block.card_per_line fluid=1  %}    
   {% when "block_text_cards" %}
       {% include block_text_cards.html header=include.block.header  cards=include.block.cards card_per_line=include.block.card_per_line  %}
   {% when "block_image_cards" %}

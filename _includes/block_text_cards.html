@@ -9,15 +9,14 @@
         {% endif %} 
       <div class="row">
         {% for item in include.cards %}
-         <div class=" {% case include.card_per_line %}
-        {% when 3 %}
-            col-4
-        {% when 4 %}
-            col-3
-        {% else %}
-            col-6
-         {% endcase %} col-xs-12 pt-4 pb-4 align-self-center about-content">
-  
+        {% assign card_per = include.card_per_line | plus: 0 %}
+        {% if card_per >= 1 and card_per <= 4 %} 
+          {% assign col =  12 | divided_by: card_per %}
+          {% assign divConClassName = "col-lg-" | append: col %}
+        {% else %} 
+          {% assign divConClassName = "col-lg" %}
+        {% endif %}
+         <div class="{{ divConClassName }} col-xs-12 pt-4 pb-4 align-self-center about-content">
             <h2>{{ item.title }}</h2>
             <p>{{ item.paragraph }}</p>
             <a class="button" href="{{ item.button_url }}">{{ item.button_lable }}</a>

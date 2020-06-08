@@ -9,7 +9,14 @@
       {% endif %} 
       <div class="row">
         {% for item in include.cards %}
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+        {% assign card_per = include.card_per_line | plus: 0 %}
+        {% if card_per >= 1 and card_per <= 4 %} 
+          {% assign col =  12 | divided_by: card_per %}
+          {% assign divConClassName = "col-lg-" | append: col %}
+        {% else %} 
+          {% assign divConClassName = "col-lg" %}
+        {% endif %}
+          <div class="col-md-6 {{ divConClassName }}  mb-4 mb-lg-0">
             <div class="card-blog">
               <img class="card-img rounded-0" src="{{item.image}}" alt="">
               <div class="card-blog-body">

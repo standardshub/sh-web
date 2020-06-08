@@ -1,15 +1,18 @@
 {% if include.fluid == 1 %}
   {% assign sectionClassName = "bg-gray section-padding-small magic-ball magic-ball-testimonial" %}
   {% assign divClassName = "section-intro text-center " %}
+  {% assign divConClassName = "" %}
 {% else %}
   {% assign sectionClassName = "bg-gray section-padding magic-ball magic-ball-testimonial pb-xl-5" %}
   {% assign divClassName = "section-intro text-center pb-90px" %}
+  {% assign divConClassName = "container" %}
 {% endif %}
 <section class="{{ sectionClassName }}">
-    <div class="container">
+    <div class="{{ divConClassName }}">
       <div class="{{ divClassName }}">
-        {%- if include.image_size -%}
-          <img class="section-intro-img" src="{{ include.image }}" alt="" style="width:{{include.image_size}}">
+        {% assign imageCheck = include.image | strip_newlines %}
+        {%- if imageCheck != "" -%}
+          <img class="section-intro-img" src="{{ include.image }}" alt="" style="width:{{ include.image_size }}">
         {%- endif -%}
         <h2>{{ include.title }}</h2>
         <p>{{ include.paragraph }}</p>
