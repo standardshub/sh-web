@@ -5,5 +5,6 @@ permalink: /information/blog/
 order: 5
 subnav: true
 ---
-
-this is blog page
+<!-- {% for post in site.posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %} -->
