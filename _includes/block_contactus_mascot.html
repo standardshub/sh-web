@@ -1,14 +1,92 @@
-<section class="magic-ball magic-ball-sm magic-ball-about">
-    <div class="container">
-      <div class="row">
-        <div class="col-6 col-xs-12 pt-4 pb-4 align-self-center">
-          <h2>{{ item.title }}</h2>
-          <p>{{ item.paragraph }}</p>
-        </div>
-        <div class="col-6 col-xs-12 pt-4 pb-4 align-self-center">
-          <h2>{{ item.title }}</h2>
-          <p>{{ item.paragraph }}</p>
-        </div>
+<style>
+  .nice-select {
+    width: 100%;
+  }
+</style>
+<section class="magic-ball magic-ball-sm magic-ball-about section-padding-small">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-xs-12 pt-4 pb-4 align-self-center">
+        <form class="needs-validation" novalidate class="was-validated" action="https://formspree.io/xknqrlvg"
+          method="POST">
+          <div class="mb-3">
+            <label for="validationCustom01">Name*</label>
+            <input type="text" class="form-control" id="validationCustom01" placeholder="Name" required name="Name">
+          </div>
+          <div class="mb-3">
+            <label for="validationCustom02">Surname*</label>
+            <input type="text" class="form-control" id="validationCustom02" placeholder="Surname" required
+              name="Surname">
+          </div>
+          <div class="mb-3">
+            <label for="validationCustom03">Phone*</label>
+            <input type="text" class="form-control" id="validationCustom03" placeholder="Phone" required name="Phone">
+            <!-- <div class="invalid-feedback">
+              Phone
+            </div> -->
+          </div>
+          <div class="mb-3">
+            <label for="validationCustom04">Function*</label>
+            <input type="text" class="form-control" id="validationCustom04" placeholder="Function" required
+              name="Function">
+          </div>
+          <div class="mb-3">
+            <label for="validationCustom05">Company*</label>
+            <input type="text" class="form-control" id="validationCustom05" placeholder="Company" required
+              name="Company">
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="validationCustom06">Your message*</label>
+            <textarea class="form-control" id="validationCustom06" rows="3" required name="Message"></textarea>
+          </div>
+
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="subCheck" name="Subscriber">
+            <label class="form-check-label" for="subCheck" style="color: black !important;">Subscriber to our mailing
+              list</label>
+          </div>
+
+          <!-- 
+          <div class="mb-3 col-12">
+            <select class="form-control">
+              <option value="" disabled selected>How do you hear about us ...</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div> 
+        -->
+
+
+          <button class="btn btn-primary" type="submit">Submit form</button>
+          <input type="hidden" name="_next" value="http://127.0.0.1:4000/contactus/" />
+        </form>
+
+      </div>
+      <div class="col-6 col-xs-12 pt-4 pb-4 align-self-center">
+        <h2>{{ item.title }}</h2>
+        <p>{{ item.paragraph }}</p>
       </div>
     </div>
-  </section> 
+  </div>
+</section>
+
+<script>
+  (function () {
+    'use strict';
+    window.addEventListener('load', function () {
+      var forms = document.getElementsByClassName('needs-validation');
+      var validation = Array.prototype.filter.call(forms, function (form) {
+        form.addEventListener('submit', function (event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+</script>

@@ -8,12 +8,14 @@ layout: default
 {% endfor %}
 <!-- ================Blocks Area End =================-->
 </section>
+{% assign contentCheck = content | strip_newlines %}
+{% if contentCheck != "" %} 
 <section class="section-margin generic-margin">
   <div class="container">
     {{ content }}
   </div>
 </section>
-
+{% endif %}
  <!-- ================Blocks Area Start =================-->
  {% for item in page.blocks_after %}
  {% include block.html block=item %}  
