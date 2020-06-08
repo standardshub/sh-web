@@ -1,92 +1,80 @@
-<style>
-  .nice-select {
-    width: 100%;
-  }
-</style>
-<section class="magic-ball magic-ball-sm magic-ball-about section-padding-small">
+<section class="section-margin">
   <div class="container">
     <div class="row">
-      <div class="col-6 col-xs-12 pt-4 pb-4 align-self-center">
-        <form class="needs-validation" novalidate class="was-validated" action="https://formspree.io/xknqrlvg"
-          method="POST">
-          <div class="mb-3">
-            <label for="validationCustom01">Name*</label>
-            <input type="text" class="form-control" id="validationCustom01" placeholder="Name" required name="Name">
-          </div>
-          <div class="mb-3">
-            <label for="validationCustom02">Surname*</label>
-            <input type="text" class="form-control" id="validationCustom02" placeholder="Surname" required
-              name="Surname">
-          </div>
-          <div class="mb-3">
-            <label for="validationCustom03">Phone*</label>
-            <input type="text" class="form-control" id="validationCustom03" placeholder="Phone" required name="Phone">
-            <!-- <div class="invalid-feedback">
-              Phone
-            </div> -->
-          </div>
-          <div class="mb-3">
-            <label for="validationCustom04">Function*</label>
-            <input type="text" class="form-control" id="validationCustom04" placeholder="Function" required
-              name="Function">
-          </div>
-          <div class="mb-3">
-            <label for="validationCustom05">Company*</label>
-            <input type="text" class="form-control" id="validationCustom05" placeholder="Company" required
-              name="Company">
-          </div>
-
-          <div class="form-group mb-3">
-            <label for="validationCustom06">Your message*</label>
-            <textarea class="form-control" id="validationCustom06" rows="3" required name="Message"></textarea>
-          </div>
-
-          <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="subCheck" name="Subscriber">
-            <label class="form-check-label" for="subCheck" style="color: black !important;">Subscriber to our mailing
-              list</label>
-          </div>
-
-          <!-- 
-          <div class="mb-3 col-12">
-            <select class="form-control">
-              <option value="" disabled selected>How do you hear about us ...</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div> 
-        -->
-
-
-          <button class="btn btn-primary" type="submit">Submit form</button>
-          <input type="hidden" name="_next" value="http://127.0.0.1:4000/contactus/" />
-        </form>
-
+      <div class="col-lg-6 col-xl-6 offset-xl-1">
+        <div class="search-wrapper">
+          <!-- <h3>Search Package</h3> -->
+          <form class="search-form needs-validation was-validated" action="https://formspree.io/xknqrlvg"
+          method="POST" style="text-align: left;">
+            <div class="form-group">
+              <label for="validationCustom01">Name*</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Name" required name="Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="validationCustom02">Surname*</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Surname" required name="Surname">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="validationCustom03">Phone*</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="validationCustom03" placeholder="Phone" required name="Phone">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="validationCustom04">Function*</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="validationCustom04" placeholder="Function" required name="Function">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="validationCustom05">Company*</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="validationCustom05" placeholder="Company" required name="Company">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="validationCustom05">Your message*</label>
+              <div class="input-group">
+                <textarea type="text" class="form-control" id="validationCustom05" placeholder="Your message ..." rows="3" required name="Message" style="height: 75px;"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <select name="selectAboutUs" id="selectAboutUs">
+                <option value="disabled" disabled selected>How do you hear about us ...</option>
+                <option value="1">ex 1</option>
+                <option value="2">ex 2</option>
+              </select>
+              <br />
+              <br />
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="setCheck" name="Subscriber">
+                <label class="form-check-label" for="setCheck" style="color: black !important;">
+                  Subscriber to our mailing list
+                </label>
+              </div>
+            </div>
+            <div class="form-group" style="text-align: right;">
+              <button class="button border-0 mt-3" type="submit">Submit form</button>
+            </div>
+            <input type="hidden" name="_next" value="http://127.0.0.1:4000/contactus/" />
+          </form>
+        </div>
       </div>
-      <div class="col-6 col-xs-12 pt-4 pb-4 align-self-center">
-        <h2>{{ item.title }}</h2>
-        <p>{{ item.paragraph }}</p>
+      <div class="col-lg-6 col-xl-5 align-self-center mb-5 mb-lg-0">
+        <div class="search-content">
+          <h2>Search suitable <br class="d-none d-xl-block"> and affordable plan <br class="d-none d-xl-block"> for your
+            tour</h2>
+          <p>Make she'd moved divided air. Whose tree that replenish tone hath own upon them it multiply was blessed is
+            lights make gathering so day dominion so creeping</p>
+          <a class="button" href="#">Learn More</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
-
-<script>
-  (function () {
-    'use strict';
-    window.addEventListener('load', function () {
-      var forms = document.getElementsByClassName('needs-validation');
-      var validation = Array.prototype.filter.call(forms, function (form) {
-        form.addEventListener('submit', function (event) {
-          if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-          form.classList.add('was-validated');
-        }, false);
-      });
-    }, false);
-  })();
-</script>
