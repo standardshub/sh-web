@@ -21,36 +21,30 @@
         </button>
         <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
           <ul class="nav navbar-nav menu_nav justify-content-end">
-
+            {% assign tagOpen = "0" %}
             {%- for path in page_paths -%}
                 {%- assign item = site.pages | where: "path", path | first -%}
+                
                 {%- if item.parent -%}
                   <li class="nav-item submenu dropdown {% if item.url==page.url %}active{% endif %}">
                     <a href="{{ item.url | relative_url }}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                       aria-expanded="false">{{ item.title | escape }}</a>
                     <ul class="dropdown-menu">
-                {%- elsif item.subnav -%}
+                    {% assign tagOpen = "1" %}
+                {%- elsif item.subnav and tagOpen == "1" -%}
                   <li class="nav-item {% if item.url==page.url %}active{% endif %}"><a class="nav-link" href="{{ item.url | relative_url }}">{{ item.title | escape }}</a></li>
-                  {%- assign itemIndex = forloop.index -%}
-                  {%- assign itemIndex = itemIndex | plus: 1 %}
-                  {%- if item.[itemIndex] -%}
-                    {%- if item.[itemIndex].subnav != true -%}
-                        </ul>
-                      </li>
-                    {%- endif -%}
-                  {% else %}
-                        </ul>
-                      </li>
-                  {%- endif -%}
                 {% else %}
+                  {%- if tagOpen == "1" -%}
+                      </ul>
+                    </li>
+                    {% assign tagOpen = "0" %}
+                  {%- endif -%}
                   <li class="nav-item {% if item.url==page.url %}active{% endif %}">
                     <a class="nav-link" href="{{ item.url | relative_url }}">
                       {{ item.title | escape }}
                     </a>
                   </li>
                 {%- endif -%}
-
-
 
               {%- endfor -%}
           </ul>

@@ -1,9 +1,9 @@
 ---
 layout: page
 title: information
-permalink: /information/blog/
+permalink: /information/
 order: 4
 parent: true
 ---
 
-this is blog page
+this is information page

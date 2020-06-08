@@ -1,8 +1,9 @@
 ---
 layout: page
 title: News
-permalink: /news/
+permalink: /information/news/
 order: 6
+subnav: true
 ---
 
 this is news page
