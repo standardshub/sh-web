@@ -1,5 +1,5 @@
 ---
-layout: page_banner
+layout: page
 title: Partners
 permalink: /partners/
 order: 3
