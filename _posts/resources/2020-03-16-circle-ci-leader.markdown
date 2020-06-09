@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "CircleCI"
+title:  "CircleCI as a Leader"
 date:   2020-03-16 13:51:54 +0700
 categories: resources
 author: Sittichai Santiworakul

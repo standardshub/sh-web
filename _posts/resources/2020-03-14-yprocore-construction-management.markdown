@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Challenge"
+title:  "YProcore’s construction management"
 date:   2020-03-14 13:51:59 +0700
 categories: resources
 author: Sittichai Santiworakul

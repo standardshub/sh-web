@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Continuous deployment for progressive web applications"
+title:  "Progressive web applications"
 date:   2020-03-17 13:51:54 +0700
 categories: resources
 author: Sittichai Santiworakul

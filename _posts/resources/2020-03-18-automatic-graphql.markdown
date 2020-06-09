@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Automatic testing for GraphQL APIs"
+title:  "Automatic GraphQL"
 date:   2020-03-18 13:51:54 +0700
 categories: resources
 author: Sittichai Santiworakul

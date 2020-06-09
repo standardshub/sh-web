@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to Resources!"
 date:   2020-03-14 13:51:54 +0700
 categories: resources
 author: Sittichai Santiworakul

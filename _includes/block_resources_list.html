@@ -1,5 +1,5 @@
 <section class="section-padding bg-gray">
-  <div class="container">
+  <div class="">
     <div id="search-demo-container">
       <input type="text" id="search-input" placeholder="search...">
       <ul id="results-container"></ul>
@@ -34,9 +34,8 @@
       {% else %}
       {% assign divConClassName = "col-lg" %}
       {% endif %}
-      <div class="col-md-6 {{ divConClassName }}  mb-4 mb-lg-4">
+      <div class="{{ divConClassName }} mb-4">
         <div class="card-blog">
-          <img class="card-img rounded-0" src="{{item.image}}" alt="">
           <div class="card-blog-body">
             <a href="{{item.url}}">
               <h4>{{item.title}}</h4>

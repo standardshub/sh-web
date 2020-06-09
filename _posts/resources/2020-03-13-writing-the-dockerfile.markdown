@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Creating a custom Docker image to run your CI builds"
+title:  "Writing the Dockerfile"
 date:   2020-03-13 13:51:54 +0700
 categories: resources
 author: Sittichai Santiworakul
