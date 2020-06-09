@@ -4,6 +4,9 @@ title: Resources
 permalink: /information/resources/
 order: 6
 subnav: true
+pagination: 
+  enabled: true
+  category: resources
 blocks_before:
   - layout: "block_image_banner"
     image: /assets/images/banner/banner-contactus.jpg

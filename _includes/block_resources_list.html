@@ -26,7 +26,7 @@
     </div>
     {% endif %}
     <div class="row">
-      {% for item in site.categories[include.category] %}
+      {% for item in paginator.posts %}
       {% assign card_per = include.card_per_line | plus: 0 %}
       {% if card_per >= 1 and card_per <= 4 %}
       {% assign col =  12 | divided_by: card_per %}
@@ -61,5 +61,19 @@
       {% endfor %}
 
     </div>
+    {% if paginator.total_pages > 1 %}
+    <ul class="pager">
+        {% if paginator.previous_page %}
+        <li class="previous">
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+        </li>
+        {% endif %}
+        {% if paginator.next_page %}
+        <li class="next">
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+        </li>
+        {% endif %}
+    </ul>
+    {% endif %}
   </div>
 </section>
