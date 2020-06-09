@@ -50,8 +50,11 @@
     padding-top: 140px;
     padding-bottom: 90px;
   }
+  .section_banner_post {
+    padding-top: 140px;
+  }
   // .nav-item-active-sub {
-  //   background-color: {{ site.primary_color }};
+  //   background-color: {{ site.primary_color }} !important;
   //   color: #fff !important;
   // }
   .pagination a, .pagination span {
