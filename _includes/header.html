@@ -34,7 +34,9 @@
                     <ul class="dropdown-menu">
                     {% assign tagOpen = "1" %}
                 {%- elsif item.subnav and tagOpen == "1" -%}
-                  <li class="nav-item {% if item.url==page.url %}active{% endif %}"><a class="nav-link" href="{{ item.url | relative_url }}">{{ item.title | escape }}</a></li>
+                  <li class="nav-item {% if item.url==page.url %} nav-item-active-sub {% endif %}">
+                    <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.title | escape }}</a>
+                  </li>
                 {% else %}
                   {%- if tagOpen == "1" -%}
                       </ul>

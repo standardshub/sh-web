@@ -46,4 +46,6 @@
   %}
   {% when "block_contactus_mascot" %}
   {% include block_contactus_mascot.html  title=include.block.title paragraph=include.block.paragraph %}
+  {% when "block_blog_list" %}
+  {% include block_blog_list.html header=include.block.header card_per_line=include.block.card_per_line category=include.block.category  %}
 {% endcase %}
