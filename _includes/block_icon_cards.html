@@ -7,7 +7,9 @@
   <div class="{{ divConClassName }}">
     {% if include.header %}
     <div class="section-intro text-center pb-90px">
-      <img class="section-intro-img" src="{{include.header.image}}" alt="">
+      {% if include.header.image %}
+        <img class="section-intro-img" src="{{include.header.image}}" alt="">
+      {% endif %}
       <h2>{{include.header.title}}</h2>
       <p>{{include.header.paragraph}}</p>
     </div>
