@@ -1,17 +1,58 @@
-<section class="section-padding bg-gray">
+<section class=" bg-gray">
+  <script src="{{ site.baseurl }}/assets/js/simple-jekyll-search.min.js"></script>
+  <style>
+    .list-ul {
+      list-style-image: url('{{ site.baseurl }}/assets/images/favicon/favicon-c-16x16.png');
+    }
+    </style>
   <div class="">
-    <div id="search-demo-container">
-      <input type="text" id="search-input" placeholder="search...">
-      <ul id="results-container"></ul>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-xs-6 pt-4 pb-4 align-self-center about-content">
+          <div class="ui icon input fluid">
+            <input placeholder="Search..." id="search-input" type="text">
+            <i aria-hidden="true" class="search icon fas fa-search"></i>
+          </div>
+        </div>
+        <div class="col-lg-4 col-xs-6 pt-4 pb-4 align-self-center about-content">
+          <div class="social-container row float-right">
+            <div class="social-btns col-xs-12">
+              <a href="#" data-analytics="property menu=blog-feed"
+                class="social-btn-rss" title="RSS">
+                <i class="fa fa-rss" aria-hidden="true"></i><span class="sr-only">RSS</span>
+              </a>
+              <a href="https://www.facebook.com/" data-analytics="property menu=facebook" target="_blank"
+                rel="noreferrer noopener" class="social-btn-facebook" title="Facebook">
+                <i class="fab fa-facebook" aria-hidden="true"></i><span class="sr-only">Facebook</span>
+              </a>
+              <a href="https://twitter.com/" data-analytics="property menu=twitter" target="_blank"
+                rel="noreferrer noopener" class="social-btn-twitter" title="Twitter">
+                <i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Twitter</span>
+              </a>
+              <a href="https://github.com/" data-analytics="property menu=github" target="_blank"
+                rel="noreferrer noopener" class="social-btn-github" title="GitHub">
+                <i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/company/" data-analytics="property menu=linkedin"
+                target="_blank" rel="noreferrer noopener" class="social-btn-linkedin" title="LinkedIn">
+                <i class="fab fa-linkedin" aria-hidden="true"></i><span class="sr-only">LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-1">
+        <div class="col-12 pt-4 pb-4">
+          <ul id="results-container" class="list-ul pl-4"></ul>
+        </div>
+      </div>
     </div>
-    <script src="{{ site.baseurl }}/assets/js/simple-jekyll-search.min.js"></script>
-
     <script>
       var sjs = SimpleJekyllSearch({
         searchInput: document.getElementById('search-input'),
         resultsContainer: document.getElementById('results-container'),
         json: '{{ site.baseurl }}/search.json',
-        searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
+        searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
         noResultsText: 'No results found',
         limit: 100,
         fuzzy: false,
@@ -45,13 +86,11 @@
             <ul class="card-blog-info mt-4">
               <li>
                 <span>
-                  <!-- <i class="ti-notepad"></i> -->
                   {{ item.date | date: "%d-%m-%Y" }}
                 </span>
               </li>
               <li>
                 <span>
-                  <!-- <i class="ti-comments-smiley"></i> -->
                   {{item.author}}
                 </span>
               </li>
@@ -64,16 +103,16 @@
     </div>
     {% if paginator.total_pages > 1 %}
     <ul class="pager">
-        {% if paginator.previous_page %}
-        <li class="previous">
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-        </li>
-        {% endif %}
-        {% if paginator.next_page %}
-        <li class="next">
-            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-        </li>
-        {% endif %}
+      {% if paginator.previous_page %}
+      <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+      </li>
+      {% endif %}
+      {% if paginator.next_page %}
+      <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+      </li>
+      {% endif %}
     </ul>
     {% endif %}
   </div>

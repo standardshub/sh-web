@@ -4,7 +4,7 @@
 
 
 @import "../vendors/bootstrap/bootstrap.min.css";
-@import "../vendors/fontawesome/css//all.min.css";
+@import "../vendors/fontawesome/css/all.min.css";
 @import "../vendors/flat-icon/font/flaticon.css";
 @import "../vendors/owl-carousel/owl.theme.default.min.css";
 @import "../vendors/owl-carousel/owl.carousel.min.css";
@@ -76,5 +76,86 @@
   .pagination {
       text-align: center;
   }
+  .ui.fluid.input {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+  }
+  .ui.input {
+    position: relative;
+    font-weight: 400;
+    font-style: normal;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    color: rgba(0, 0, 0, .87);
+  }
+
+  .ui.input>input {
+    margin: 0;
+    max-width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    outline: 0;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    text-align: left;
+    line-height: 1.21428571em;
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    padding: .67857143em 1em;
+    background: #fff;
+    border: 1px solid rgba(34, 36, 38, .15);
+    color: rgba(0, 0, 0, .87);
+    border-radius: .28571429rem;
+    -webkit-transition: border-color .1s ease, -webkit-box-shadow .1s ease;
+    transition: border-color .1s ease, -webkit-box-shadow .1s ease;
+    transition: box-shadow .1s ease, border-color .1s ease;
+    transition: box-shadow .1s ease, border-color .1s ease, -webkit-box-shadow .1s ease;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .ui.icon.input>i.icon:not(.link) {
+    pointer-events: none;
+  }
+
+  .ui.icon.input>i.icon {
+    cursor: default;
+    position: absolute;
+    line-height: 1;
+    text-align: center;
+    top: 0;
+    right: 0;
+    margin: 0;
+    height: 100%;
+    width: 2.67142857em;
+    opacity: .5;
+    border-radius: 0 .28571429rem .28571429rem 0;
+    -webkit-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+  }
+
+  .ui.icon.input>i.icon:before {
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    margin-top: -.5em;
+  }
+
+  .social-btns>* {
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: normal;
+    display: inline-block;
+    overflow: hidden;
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+    text-align: center;
+    vertical-align: top;
+    color: #898989;
+}
 /* custom style end
   ============================================================================================ */
