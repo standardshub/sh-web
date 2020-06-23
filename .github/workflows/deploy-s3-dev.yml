@@ -30,4 +30,4 @@ jobs:
         run: bundle exec jekyll build
       - name: Deploy static site to development S3 bucket
         run: |
-          aws s3 sync ./_site/ s3://mywebtest --delete
+          aws s3 sync ./_site/ s3://devstandardshub --delete
