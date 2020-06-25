@@ -1,4 +1,10 @@
+{% if include.left == 1 %}
+<div class="social-container row float-left">
+{% elsif include.center == 1 %}
+<div class="social-container row d-flex justify-content-center justify-content-md-start">
+{% else %}  
 <div class="social-container row float-right">
+{% endif %}
   <div class="social-btns col-xs-12">
     <a href="#" data-analytics="property menu=blog-feed"
       class="social-btn-rss" title="RSS">
