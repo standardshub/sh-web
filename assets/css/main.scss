@@ -48,7 +48,7 @@
   }
   .section_banner {
     padding-top: 140px;
-    padding-bottom: 90px;
+    // padding-bottom: 90px;
   }
   .section_banner_post {
     padding-top: 140px;
@@ -161,6 +161,17 @@
 .logo_footer_img {
   height: 121px;
   width: auto;
+}
+
+.contactus-logo {
+  background: url(../images/logo.png) left center no-repeat;
+  background-size: contain;
+  height: 100%;
+  background-color: {{ site.nav_transition_background_color }};
+}
+
+.list-social-float-right{
+  padding-right: 15px;
 }
 /* custom style end
   ============================================================================================ */

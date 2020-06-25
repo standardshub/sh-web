@@ -3,13 +3,15 @@
 {% elsif include.center == 1 %}
 <div class="social-container row d-flex justify-content-center justify-content-md-start">
 {% else %}  
-<div class="social-container row float-right">
+<div class="social-container row float-right list-social-float-right">
 {% endif %}
   <div class="social-btns col-xs-12">
-    <a href="#" data-analytics="property menu=blog-feed"
+    {% if site.rss_url %}
+    <a href="{{site.rss_url}}" data-analytics="property menu=blog-feed"
       class="social-btn-rss" title="RSS">
       <i class="fa fa-rss" aria-hidden="true"></i><span class="sr-only">RSS</span>
     </a>
+    {% endif %}
     {% if site.facebook_url %}
     <a href="{{site.facebook_url}}" data-analytics="property menu=facebook" target="_blank"
       rel="noreferrer noopener" class="social-btn-facebook" title="Facebook">
@@ -34,5 +36,13 @@
       <i class="fab fa-linkedin" aria-hidden="true"></i><span class="sr-only">LinkedIn</span>
     </a>
     {% endif %}
+    {% if site.youtube_url %}
+    <a href="{{site.youtube_url}}" data-analytics="property menu=youtube"
+      target="_blank" rel="noreferrer noopener" class="social-btn-youtube" title="youtube">
+      <i class="fab fa-youtube-square" aria-hidden="true"></i><span class="sr-only">Youtube</span>
+    </a>
+    {% endif %}
+
+    
   </div>
 </div>

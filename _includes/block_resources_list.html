@@ -1,10 +1,10 @@
-<section class=" bg-gray">
+<section class="section-padding bg-gray">
   <script src="{{ site.baseurl }}/assets/js/simple-jekyll-search.min.js"></script>
   <style>
     .list-ul {
       list-style-image: url('{{ site.baseurl }}/assets/images/favicon/favicon-c-16x16.png');
     }
-    </style>
+  </style>
   <div class="">
     <div class="container">
       <div class="row">
@@ -55,23 +55,25 @@
       {% endif %}
       <div class="{{ divConClassName }} mb-4">
         <div class="card-blog">
-          <div class="card-blog-body">
-            <a href="{{item.url}}">
-              <h4>{{item.title}}</h4>
-            </a>
-            <p>{{ item.excerpt }}</p>
-            <ul class="card-blog-info mt-4">
-              <li>
-                <span>
-                  {{ item.date | date: "%d-%m-%Y" }}
-                </span>
-              </li>
-              <li>
-                <span>
-                  {{item.author}}
-                </span>
-              </li>
-            </ul>
+          <div class=" card-blog-body pl-0 pr-0">
+            <div class="container">
+              <a href="{{item.url}}">
+                <h4>{{item.title}}</h4>
+              </a>
+              <p>{{ item.excerpt }}</p>
+              <ul class="card-blog-info mt-4">
+                <li>
+                  <span>
+                    {{ item.date | date: "%d-%m-%Y" }}
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    {{item.author}}
+                  </span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -79,18 +81,21 @@
 
     </div>
     {% if paginator.total_pages > 1 %}
-    <ul class="pager">
-      {% if paginator.previous_page %}
-      <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-      </li>
-      {% endif %}
-      {% if paginator.next_page %}
-      <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-      </li>
-      {% endif %}
-    </ul>
+    <div class="container">
+      <ul class="pager text-center mt-4">
+        {% if paginator.previous_page %}
+        <li class="previous">
+          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer
+            Posts</a>
+        </li>
+        {% endif %}
+        {% if paginator.next_page %}
+        <li class="next">
+          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
     {% endif %}
   </div>
 </section>

@@ -49,7 +49,7 @@
         margin-bottom: 23px;
     }
 	.header_area .navbar {
-		background: $secondary-color;
+		background: $nav-transition-bg;
 
 		.nav-item.active .nav-link{
 			color: $primary-color !important;
@@ -106,7 +106,7 @@
         margin-left: 0px;
     }
 	.header_area .navbar-collapse{
-		max-height: 340px;
+		max-height: 418px;
 		overflow-y: scroll;
 	}
 	.header_area .navbar .nav .nav-item.submenu ul .nav-item .nav-link {

@@ -30,10 +30,12 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # social media
 twitter_username: jekyllrb
 github_username:  jekyll
+rss_url: ""
 facebook_url: "https://www.facebook.com/"
 github_url:  "https://github.com/"
 twitter_url: "https://twitter.com/"
 linkedin_url: "https://www.linkedin.com/company/"
+youtube_url: ""
 
 
 # Look & Feel configuation
