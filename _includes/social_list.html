@@ -6,37 +6,37 @@
 <div class="social-container row float-right list-social-float-right">
 {% endif %}
   <div class="social-btns col-xs-12">
-    {% if site.rss_url %}
+    {% if site.rss_url != "" %}
     <a href="{{site.rss_url}}" data-analytics="property menu=blog-feed"
       class="social-btn-rss" title="RSS">
       <i class="fa fa-rss" aria-hidden="true"></i><span class="sr-only">RSS</span>
     </a>
     {% endif %}
-    {% if site.facebook_url %}
+    {% if site.facebook_url != "" %}
     <a href="{{site.facebook_url}}" data-analytics="property menu=facebook" target="_blank"
       rel="noreferrer noopener" class="social-btn-facebook" title="Facebook">
       <i class="fab fa-facebook" aria-hidden="true"></i><span class="sr-only">Facebook</span>
     </a>
     {% endif %}
-    {% if site.twitter_url %}
+    {% if site.twitter_url != "" %}
     <a href="{{site.twitter_url}}" data-analytics="property menu=twitter" target="_blank"
       rel="noreferrer noopener" class="social-btn-twitter" title="Twitter">
       <i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Twitter</span>
     </a>
     {% endif %}
-    {% if site.github_url %}
+    {% if site.github_url != "" %}
     <a href="{{site.github_url}}" data-analytics="property menu=github" target="_blank"
       rel="noreferrer noopener" class="social-btn-github" title="GitHub">
       <i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">GitHub</span>
     </a>
     {% endif %}
-    {% if site.linkedin_url %}
+    {% if site.linkedin_url != "" %}
     <a href="{{site.linkedin_url}}" data-analytics="property menu=linkedin"
       target="_blank" rel="noreferrer noopener" class="social-btn-linkedin" title="LinkedIn">
       <i class="fab fa-linkedin" aria-hidden="true"></i><span class="sr-only">LinkedIn</span>
     </a>
     {% endif %}
-    {% if site.youtube_url %}
+    {% if site.youtube_url != "" %}
     <a href="{{site.youtube_url}}" data-analytics="property menu=youtube"
       target="_blank" rel="noreferrer noopener" class="social-btn-youtube" title="youtube">
       <i class="fab fa-youtube-square" aria-hidden="true"></i><span class="sr-only">Youtube</span>

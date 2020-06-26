@@ -4,42 +4,53 @@
     <div class="row mb-4">
       <div class="col-lg-2  col-md-6 col-sm-6">
         <div class="single-footer-widget">
+          {% assign checkTools = site.link_tools | strip_newlines %}
+          {% if checkTools != "" %} 
           <h6>Tools</h6>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Feature</a></li>
-            <li><a href="#">Services</a></li>
+            {% for is_tool in site.link_tools %}
+            <li><a href="{{ is_tool.url }}">{{ is_tool.title }}</a></li>
+            {%- endfor -%}
           </ul>
+          {% endif %}
         </div>
       </div>
       <div class="col-lg-2 col-md-6 col-sm-6">
         <div class="single-footer-widget">
+          {% assign checkServices = site.link_services | strip_newlines %}
+          {% if checkServices != "" %} 
           <h6>Services</h6>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Feature</a></li>
-            <li><a href="#">Services</a></li>
+            {% for is_service in site.link_services %}
+            <li><a href="{{ is_service.url }}">{{ is_service.title }}</a></li>
+            {%- endfor -%}
           </ul>
+          {% endif %}
         </div>
       </div>
       <div class="col-lg-2  col-md-6 col-sm-6">
         <div class="single-footer-widget">
           <h6>Resources</h6>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Feature</a></li>
-            <li><a href="#">Services</a></li>
+            {% for post_resource in site.categories.resources limit: site.resources_limit %}
+              {% if post_resource.url %}
+                  <li><a href="{{ post_resource.url }}">{{ post_resource.title }}</a></li>
+              {% endif %}
+            {% endfor %}
           </ul>
         </div>
       </div>
       <div class="col-lg-2  col-md-6 col-sm-6">
         <div class="single-footer-widget mail-chimp">
+          {% assign checkCompany = site.link_company | strip_newlines %}
+          {% if checkCompany != "" %} 
           <h6 class="mb-20">Company</h6>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Feature</a></li>
-            <li><a href="#">Services</a></li>
+            {% for is_company in site.link_company %}
+            <li><a href="{{ is_company.url }}">{{ is_company.title }}</a></li>
+            {%- endfor -%}
           </ul>
+          {% endif %}
         </div>
       </div>
     </div>

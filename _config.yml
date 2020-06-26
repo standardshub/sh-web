@@ -37,6 +37,24 @@ twitter_url: "https://twitter.com/"
 linkedin_url: "https://www.linkedin.com/company/"
 youtube_url: ""
 
+# Sitemap
+link_tools:
+  - title: "Overview"
+    url: "https://www.google.com/"
+  - title: "Overview l2"
+    url: "https://www.google.com/"
+link_services:
+  - title: "Service"
+    url: "https://www.google.com/"
+  - title: "Service l2"
+    url: "https://www.google.com/"
+resources_limit: 3    
+link_company:
+  - title: "Company"
+    url: "https://www.google.com/"
+  - title: "Company l2"
+    url: "https://www.google.com/"
+  
 
 # Look & Feel configuation
 # font
