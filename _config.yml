@@ -54,7 +54,10 @@ link_company:
     url: "https://www.google.com/"
   - title: "Company l2"
     url: "https://www.google.com/"
-  
+
+# Contact Us
+action_url: "https://formspree.io/xknqrlvg"
+redirect_url: "http://127.0.0.1:4000/contactus/"
 
 # Look & Feel configuation
 # font

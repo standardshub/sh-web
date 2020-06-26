@@ -16,7 +16,7 @@ blocks:
     paragraph: Are you looking for a specifications factory that continually strives to optimize the delicate balance between the need for consensus and time to market through tools and simplified procedures, while empowering the people doing the work to complete a work item in the minimal amount of time. Markdown at [jekyllrb.com](https://jekyllrb.com/)
     image: assets/images/home/photo_example2.png
     button_lable: "Lean More"
-    button_url: ""
+    button_url: "https://www.google.com/"
   - layout: "block_image_text"
     title: Developers wanted
     paragraph: Standard Hub has more than 150 specifications defined at the Open Mobile Alliance, IOT Smart Objects created at the IPSO Alliance, and developer tools  and resources that facilitate the development of products based on LightweightM2M (LwM2M), the IoT industry’s protocol for device management.
