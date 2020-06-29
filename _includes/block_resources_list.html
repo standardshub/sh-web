@@ -8,19 +8,21 @@
   <div class="">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-xs-6 pt-4 pb-4 align-self-center about-content">
+        <div class="col-lg-8 col-xs-6 pt-4 pb-0 pl-0 align-self-center about-content">
           <div class="ui icon input fluid">
             <input placeholder="Search..." id="search-input" type="text">
             <i aria-hidden="true" class="search icon fas fa-search"></i>
           </div>
         </div>
-        <div class="col-lg-4 col-xs-6 pt-4 pb-4 align-self-center about-content">
+        <div class="col-lg-4 col-xs-6 pt-4 pb-0 align-self-center about-content">
           {% include social_list.html %}
         </div>
       </div>
       <div class="row mb-1">
-        <div class="col-12 pt-4 pb-4">
-          <ul id="results-container" class="list-ul pl-4"></ul>
+        <div class="col-lg-8 col-xs-6 pt-0 pb-4 pl-0">
+          <ul id="results-container" class="list-group"></ul>
+        </div>
+        <div class="col-lg-4 col-xs-6 pt-0 pb-4">
         </div>
       </div>
     </div>
@@ -29,9 +31,9 @@
         searchInput: document.getElementById('search-input'),
         resultsContainer: document.getElementById('results-container'),
         json: '{{ site.baseurl }}/search.json',
-        searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
-        noResultsText: 'No results found',
-        limit: 100,
+        searchResultTemplate: '<li class="list-group-item"><i class="fas fa-search text-secondary"><a class="pl-3" href="{url}?query={query}" title="{desc}">{title}</a></li>',
+        noResultsText: '<div class="p-2">No results found</div>',
+        limit: 10,
         fuzzy: false,
         onlyCategory: "{{ include.category}}"
       })
