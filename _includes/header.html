@@ -1,0 +1,44 @@
+<!--================ Header Menu Area start =================-->
+<header class="header_area" style="color:{{site.nav_label_color}};background-color: {{site.nav_background_color}};">
+  <div class="main_menu">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container box_1620">
+        <a class="navbar-brand logo_h" href="{{ "/" | relative_url }}">
+
+          <img src="/assets/images/logo.png" alt={{ site.title }} />
+        </a>
+
+        {%- assign default_paths = site.pages | sort:"order" | map: "path" -%}
+        {%- assign page_paths = site.header_pages | default: default_paths -%}
+
+        {%- if page_paths -%}
+        {%- endif -%}
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+          <ul class="nav navbar-nav menu_nav justify-content-end">
+
+            {%- for path in page_paths -%}
+            {%- assign item = site.pages | where: "path", path | first -%}
+            <li class="nav-item {% if item.url==page.url %}active{% endif %}">
+              <a class="nav-link" href="{{ item.url | relative_url }}">
+                {{ item.title | escape }}
+              </a>
+
+              {%- endfor -%}
+
+
+          </ul>
+
+          <!-- <div class=" nav-right text-center text-lg-right py-4 py-lg-0">
+                <a class="button" href="#">Get Started</a>
+        </div> -->
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<!--================Header Menu Area =================-->

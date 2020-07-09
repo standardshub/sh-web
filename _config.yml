@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -27,13 +27,34 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: StandardsHub
-github_username:  StandardsHub
+github_username: StandardsHub
 
 # Build settings
-theme: minima
+#theme: minima
 plugins:
   - jekyll-feed
 
+# Look & Feel configuation
+# font
+google_font: "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700"
+title_font_family: "Source Sans Pro"
+text_font_family: "Arial"
+title_color: "#1b1a41"
+text_color: "#14011e"
+link_color: "#00ddff"
+primary_color: "#00ddff"
+secondary_color: "#777777"
+
+# navigation area
+logo_height: "140px"
+nav_text_color: "#ffffff"
+nav_text_active_color: "#00ddff"
+nav_background_color: "#14011e"
+nav_transition_background_color: "#14011e"
+
+#footer area
+footer_title_color: "#ffffff"
+footer_text_color: "#77798f"
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
