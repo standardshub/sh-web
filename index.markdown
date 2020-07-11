@@ -16,7 +16,7 @@ blocks:
     paragraph: Are you looking for a specifications factory that continually strives to optimize the delicate balance between the need for consensus and time to market through tools and simplified procedures, while empowering the people doing the work to complete a work item in the minimal amount of time. Markdown at [jekyllrb.com](https://jekyllrb.com/)
     image: assets/images/home/photo_example2.png
     button_lable: "Lean More"
-    button_url: ""
+    button_url: "https://www.google.com/"
   - layout: "block_image_text"
     title: Developers wanted
     paragraph: Standard Hub has more than 150 specifications defined at the Open Mobile Alliance, IOT Smart Objects created at the IPSO Alliance, and developer tools  and resources that facilitate the development of products based on LightweightM2M (LwM2M), the IoT industry’s protocol for device management.
@@ -28,7 +28,7 @@ blocks:
     paragraph: The Standard Hubs Work Program (WP) employs a lightweight, working group-focused process where members can create a new work item in less than a week. Working Groups (WGs) define their own process, tools, partnerships and cadence.
     image: assets/images/home/section-icon.png
   - layout: "block_icon_cards"
-    card_per_line: 4
+    card_per_line: 3
     cards:
       - title: Communications
         paragraph: The COM Working Group is responsible for service layer standardization of communications related technologies, including areas such as Messaging, Push-to-talk over Cellular, Presence, Contact Information and Spam Reporting.

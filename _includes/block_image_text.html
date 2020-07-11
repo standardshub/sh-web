@@ -1,6 +1,13 @@
 <section class="magic-ball magic-ball-sm magic-ball-about">
     {% if include.fluid == 0 %} 
     <div class="container">
+      {% if include.header %} 
+          <div class="section-intro text-center pb-90px">
+            <img class="section-intro-img" src="{{include.header.image}}" alt="">
+            <h2>{{include.header.title}}</h2>
+            <p>{{include.header.paragraph}}</p>
+          </div>
+      {% endif %} 
       <div class="row">
         <div class="col-lg-6 col-md-6 mb-4 mb-md-0 ">
             <img class="img-fluid" src="{{ include.image }}" alt="">
@@ -13,6 +20,13 @@
       </div>
     </div>
     {% else %} 
+      {% if include.header %} 
+        <div class="section-intro text-center pb-90px">
+          <img class="section-intro-img" src="{{include.header.image}}" alt="">
+          <h2>{{include.header.title}}</h2>
+          <p>{{include.header.paragraph}}</p>
+        </div>
+      {% endif %}
     <div class="row">
         <div class="col-lg-6  col-md-6  mb-4 mb-md-0">
             <img class="img-fluid" src="{{ include.image }}" alt="">

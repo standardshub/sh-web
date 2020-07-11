@@ -1,0 +1,59 @@
+<section class="section-margin">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-xl-6 offset-xl-1">
+        <div class="search-wrapper">
+          <form class="search-form needs-validation was-validated text-left" action="{{ site.action_url }}"
+            method="POST">
+            {% for item in include.form_input %}
+              {% case item.type %}
+                {% when "text" %}
+                  <div class="form-group">
+                    <label for="validationCustom{{ forloop.index }}">{{ item.label }}*</label>
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="validationCustom{{ forloop.index }}" placeholder="{{ item.label }}" required name="{{ item.label }}">
+                    </div>
+                  </div>
+                {% when "textarea" %}
+                  <div class="form-group">
+                    <label for="validationCustom{{ forloop.index }}">{{ item.label }}*</label>
+                    <div class="input-group">
+                      <textarea type="text" class="form-control" id="validationCustom{{ forloop.index }}" placeholder="....." rows="3" required name="Message" style="height: 75px;"></textarea>
+                    </div>
+                  </div>
+                {% when "select" %}
+                  <div class="form-group">
+                    <select name="{{ item.label }}" id="{{ item.label }}">
+                      <option value="disabled" disabled selected>{{ item.label }}</option>
+                      {% for is_option in item.option %}
+                        <option value="{{ is_option.value}}">{{ is_option.key}}</option>
+                      {% endfor %}
+                    </select>
+                    <br />
+                    <br />
+                  </div>
+                {% when "checkbox" %}
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="{{ item.label }}" name="{{ item.label }}">
+                      <label class="form-check-label text-dark" for="{{ item.label }}">
+                        {{ item.label }}
+                      </label>
+                    </div>
+                  </div>
+              {% endcase %}
+            {% endfor %}
+            <div class="form-group text-right">
+              <button class="button border-0 mt-3" type="submit">{{ include.button_label }}</button>
+            </div>
+            <input type="hidden" name="_next" value="{{ site.redirect_url }}" />
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-6 col-xl-5">
+        <div class="search-content contactus-logo" >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
