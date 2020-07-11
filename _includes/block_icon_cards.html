@@ -1,26 +1,47 @@
 <section class="section-margin">
-    <div class="container">
-        {% if include.header %} 
-          <div class="section-intro text-center pb-90px">
-            <img class="section-intro-img" src="{{include.header.image}}" alt="">
-            <h2>{{include.header.title}}</h2>
-            <p>{{include.header.paragraph}}</p>
-          </div>
-          {% endif %} 
-      <div class="row">
-        {% for item in include.cards %}
-        <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 pb-4">
-            <div class="service-card text-center">
-              <div class="service-card-img">
-                <img class="img-fluid" src="{{item.image}}" alt="">
-              </div>
-              <div class="service-card-body">
-                <h3>{{item.title}}</h3>
-                <p>{{ item.paragraph }}</p>
-              </div>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
+  {% if include.fluid == 1 %}
+  {% assign divConClassName = "" %}
+  {% else %}
+  {% assign divConClassName = "container" %}
+  {% endif %}
+  <div class="{{ divConClassName }}">
+    {% if include.header %}
+    <div class="section-intro text-center pb-90px">
+      {% if include.header.image %}
+        <img class="section-intro-img" src="{{include.header.image}}" alt="">
+      {% endif %}
+      <h2>{{include.header.title}}</h2>
+      <p>{{include.header.paragraph}}</p>
     </div>
-  </section>
+    {% endif %}
+    <div class="row">
+      {% for item in include.cards %}
+      {% assign card_per = include.card_per_line | plus: 0 %}
+      {% if card_per >= 1 and card_per <= 4 %}
+      {% assign col =  12 | divided_by: card_per %}
+      {% assign divConClassName = "col-lg-" | append: col %}
+      {% else %}
+      {% assign divConClassName = "col-lg" %}
+      {% endif %}
+      <div class="{{ divConClassName }} col-md-6 mb-4 mb-lg-0 pb-4">
+        {% if include.logo == 1 %}
+        {% assign divCardImg = "service-card-img block_logo_height" %}
+        {% assign imgClass = "img-fluid w-auto h-100" %}
+        {% else %}
+        {% assign divCardImg = "service-card-img" %}
+        {% assign imgClass = "img-fluid" %}
+        {% endif %}
+        <div class="service-card text-center">
+          <div class="{{ divCardImg }}">
+            <img class="{{ imgClass }}" src="{{item.image}}" alt="">
+          </div>
+          <div class="service-card-body">
+            <h3>{{item.title}}</h3>
+            <p>{{ item.paragraph }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

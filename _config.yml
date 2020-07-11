@@ -29,10 +29,37 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: StandardsHub
 github_username: StandardsHub
 
-# Build settings
-#theme: minima
-plugins:
-  - jekyll-feed
+# social media
+twitter_username: jekyllrb
+github_username:  jekyll
+rss_url: ""
+facebook_url: "https://www.facebook.com/"
+github_url:  "https://github.com/"
+twitter_url: "https://twitter.com/"
+linkedin_url: "https://www.linkedin.com/company/"
+youtube_url: ""
+
+# Sitemap
+link_tools:
+  - title: "Overview"
+    url: "https://www.google.com/"
+  - title: "Overview l2"
+    url: "https://www.google.com/"
+link_services:
+  - title: "Service"
+    url: "https://www.google.com/"
+  - title: "Service l2"
+    url: "https://www.google.com/"
+resources_limit: 3    
+link_company:
+  - title: "Company"
+    url: "https://www.google.com/"
+  - title: "Company l2"
+    url: "https://www.google.com/"
+
+# Contact Us
+action_url: "https://formspree.io/xknqrlvg"
+redirect_url: "http://127.0.0.1:4000/contactus/"
 
 # Look & Feel configuation
 # font
@@ -55,7 +82,26 @@ nav_transition_background_color: "#14011e"
 #footer area
 footer_title_color: "#ffffff"
 footer_text_color: "#77798f"
-# Exclude from processing.
+
+#snippet of a posts’s content
+excerpt_separator: <!--more-->
+
+# Build settings
+# theme: standardhub-theme
+plugins:
+  - jekyll-feed
+  - jekyll-paginate-v2
+  # - jekyll-paginate-category
+  
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 6
+  permalink: '/page/:num/'
+  title: ' - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true# Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
 # the internal "default list".

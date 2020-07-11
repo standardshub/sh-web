@@ -1,0 +1,96 @@
+<section class="section-padding bg-gray">
+  <script src="{{ site.baseurl }}/assets/js/simple-jekyll-search.min.js"></script>
+  <div class="container">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-xs-6 pt-4 pb-0 pl-0 align-self-center about-content">
+          <div class="ui icon input fluid">
+            <input placeholder="Search..." id="search-input" type="text">
+            <i aria-hidden="true" class="search icon fas fa-search"></i>
+          </div>
+        </div>
+        <div class="col-lg-4 col-xs-6 pt-4 pb-0 align-self-center about-content">
+          {% include social_list.html %}
+        </div>
+      </div>
+      <div class="row mb-1">
+        <div class="col-lg-8 col-xs-6 pt-0 pb-4 pl-0">
+          <ul id="results-container" class="list-group"></ul>
+        </div>
+        <div class="col-lg-4 col-xs-6 pt-0 pb-4">
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var sjs = SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '{{ site.baseurl }}/search.json',
+        searchResultTemplate: '<li class="list-group-item"><i class="fas fa-search text-secondary"><a class="pl-3" href="{url}?query={query}" title="{desc}">{title}</a></li>',
+        noResultsText: '<div class="p-2">No results found</div>',
+        limit: 10,
+        fuzzy: false,
+        onlyCategory: "{{ include.category}}"
+      })
+    </script>
+
+    {% if include.header %}
+    <div class="section-intro text-center pb-90px">
+      <img class="section-intro-img" src="{{include.header.image}}" alt="">
+      <h2>{{include.header.title}}</h2>
+      <p>{{include.header.paragraph}}</p>
+    </div>
+    {% endif %}
+    <div class="row">
+      {% for item in paginator.posts %}
+      {% assign card_per = include.card_per_line | plus: 0 %}
+      {% if card_per >= 1 and card_per <= 4 %}
+      {% assign col =  12 | divided_by: card_per %}
+      {% assign divConClassName = "col-lg-" | append: col %}
+      {% else %}
+      {% assign divConClassName = "col-lg" %}
+      {% endif %}
+      <div class="col-md-6 {{ divConClassName }}  mb-4 mb-lg-4">
+        <div class="card-blog">
+          <img class="card-img rounded-0" src="{{item.image}}" alt="">
+          <div class="card-blog-body">
+            <a href="{{item.url}}">
+              <h4>{{item.title}}</h4>
+            </a>
+            <p>{{ item.excerpt }}</p>
+            <ul class="card-blog-info mt-4">
+              <li>
+                <span>
+                  <!-- <i class="ti-notepad"></i> -->
+                  {{ item.date | date: "%d-%m-%Y" }}
+                </span>
+              </li>
+              <li>
+                <span>
+                  <!-- <i class="ti-comments-smiley"></i> -->
+                  {{item.author}}
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% if paginator.total_pages > 1 %}
+    <ul class="pager text-center mt-4">
+      {% if paginator.previous_page %}
+      <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+      </li>
+      {% endif %}
+      {% if paginator.next_page %}
+      <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+      </li>
+      {% endif %}
+    </ul>
+    {% endif %}
+  </div>
+</section>

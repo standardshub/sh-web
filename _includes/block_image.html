@@ -1,0 +1,45 @@
+<section class="magic-ball magic-ball-sm magic-ball-about">
+  {% if include.fluid == 0 %}
+  <div class="container">
+    {% if include.header %} 
+      <div class="section-intro text-center pb-90px">
+        <img class="section-intro-img" src="{{include.header.image}}" alt="">
+        <h2>{{include.header.title}}</h2>
+        <p>{{include.header.paragraph}}</p>
+      </div>
+    {% endif %}
+    <div class="row">
+      <div class="col-12 ">
+        <img class="img-fluid w-100" src="{{ include.image }}" alt="">
+      </div>
+    </div>
+  </div>
+  {% elsif include.fluid == 1 %}
+    {% if include.header %} 
+      <div class="section-intro text-center pb-90px">
+        <img class="section-intro-img" src="{{include.header.image}}" alt="">
+        <h2>{{include.header.title}}</h2>
+        <p>{{include.header.paragraph}}</p>
+      </div>
+    {% endif %}
+  <div class="row">
+    <div class="col-12">
+      <img class="img-fluid w-100" src="{{ include.image }}" alt="">
+    </div>
+  </div>
+  {% else %}
+    {% if include.header %} 
+      <div class="section-intro text-center pb-90px">
+        <img class="section-intro-img" src="{{include.header.image}}" alt="">
+        <h2>{{include.header.title}}</h2>
+        <p>{{include.header.paragraph}}</p>
+      </div>
+    {% endif %}
+  <div class="row">
+    <div class="col-12">
+      <div class="background-image" style="background-image: url('{{ include.image }}');">
+      </div>
+    </div>
+  </div>
+  {% endif %}
+</section>

@@ -1,84 +1,93 @@
 <!-- ================ start footer Area ================= -->
-<footer class="footer-area">
+<footer class="footer-area pb-1">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-3  col-md-6 col-sm-6">
+    <div class="row mb-4">
+      <div class="col-lg-2  col-md-6 col-sm-6">
         <div class="single-footer-widget">
-          <h6>About Agency</h6>
-          <p>
-            The world has become so fast paced that people don’t want to stand by reading a page of information to be they would much rather look at a presentation and understand
-          </p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-6">
-        <div class="single-footer-widget">
-          <h6>Navigation Links</h6>
-          <div class="row">
-            <div class="col">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Feature</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-              </ul>
-            </div>
-            <div class="col">
-              <ul>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3  col-md-6 col-sm-6">
-        <div class="single-footer-widget">
-          <h6>Newsletter</h6>
-          <p>
-            For business professionals caught between high OEM price and mediocre print and graphic output.
-          </p>
-          <div id="mc_embed_signup">
-            <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscription relative">
-              <div class="input-group d-flex flex-row">
-                <input name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
-                <button class="btn bb-btn"><span class="lnr lnr-location"></span></button>
-              </div>
-              <div class="mt-10 info"></div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3  col-md-6 col-sm-6">
-        <div class="single-footer-widget mail-chimp">
-          <h6 class="mb-20">InstaFeed</h6>
-          <ul class="instafeed d-flex flex-wrap">
-            <li><img src="img/instagram/i1.jpg" alt=""></li>
-            <li><img src="img/instagram/i2.jpg" alt=""></li>
-            <li><img src="img/instagram/i3.jpg" alt=""></li>
-            <li><img src="img/instagram/i4.jpg" alt=""></li>
-            <li><img src="img/instagram/i5.jpg" alt=""></li>
-            <li><img src="img/instagram/i6.jpg" alt=""></li>
-            <li><img src="img/instagram/i7.jpg" alt=""></li>
-            <li><img src="img/instagram/i8.jpg" alt=""></li>
+          {% assign checkTools = site.link_tools | strip_newlines %}
+          {% if checkTools != "" %} 
+          <h6>Tools</h6>
+          <ul>
+            {% for is_tool in site.link_tools %}
+            <li><a href="{{ is_tool.url }}">{{ is_tool.title }}</a></li>
+            {%- endfor -%}
           </ul>
+          {% endif %}
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6 col-sm-6">
+        <div class="single-footer-widget">
+          {% assign checkServices = site.link_services | strip_newlines %}
+          {% if checkServices != "" %} 
+          <h6>Services</h6>
+          <ul>
+            {% for is_service in site.link_services %}
+            <li><a href="{{ is_service.url }}">{{ is_service.title }}</a></li>
+            {%- endfor -%}
+          </ul>
+          {% endif %}
+        </div>
+      </div>
+      <div class="col-lg-2  col-md-6 col-sm-6">
+        <div class="single-footer-widget">
+          <h6>Resources</h6>
+          <ul>
+            {% for post_resource in site.categories.resources limit: site.resources_limit %}
+              {% if post_resource.url %}
+                  <li><a href="{{ post_resource.url }}">{{ post_resource.title }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-2  col-md-6 col-sm-6">
+        <div class="single-footer-widget mail-chimp">
+          {% assign checkCompany = site.link_company | strip_newlines %}
+          {% if checkCompany != "" %} 
+          <h6 class="mb-20">Company</h6>
+          <ul>
+            {% for is_company in site.link_company %}
+            <li><a href="{{ is_company.url }}">{{ is_company.title }}</a></li>
+            {%- endfor -%}
+          </ul>
+          {% endif %}
         </div>
       </div>
     </div>
 
-    <div class="footer-bottom">
+    <div class="row align-items-center mt-4">
+      <div class="col-lg-6  col-md-6 col-sm-12 mb-4">
+        {% include social_list.html center=1 %}
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 mb-4 text-center">
+        <img class="logo_footer_img float-md-right" src="/assets/images/logo_footer.png" alt="">
+      </div>
+    </div> 
+
+    <div class="footer-bottom mt-2">
       <div class="row align-items-center">
-        <p class="col-lg-8 col-sm-12 footer-text m-0 text-center text-lg-left">
+        <div class="mt-2 mb-2 col-lg-6 col-sm-12 footer-social text-center text-md-left">
+          <ul class="ul-footer-page ml-md-0">
+            {% assign site_pages = site.pages | sort: "order" %}
+            {% for is_page in site_pages %}
+              {% assign checkFooter = is_page.footer | strip_newlines %}
+              {% if checkFooter != "" %} 
+                {% if is_page.title and is_page.autogen == nil %}
+                  {% assign pageUrl = page.url | split: "/" %}
+                  {% assign itemUrl = is_page.url | split: "/" %}
+                  <li class="li-footer-page">
+                    <a class="a-footer-page footer-list-itme-a" href="{{ is_page.url | relative_url }}">{{ is_page.title | escape }}</a>
+                  </li>
+                {% endif %}
+              {% endif %}
+            {%- endfor -%}
+          </ul>
+        </div>
+        <p class="mt-2 mb-2 col-lg-6 col-sm-12 footer-text m-0 text-center text-lg-right">
           Copyright &copy;
           <script>document.write(new Date().getFullYear());</script> {{site.title}} All rights reserved
+          <span class="ml-4">v1.0</span>
         </p>
-        <div class="col-lg-4 col-sm-12 footer-social text-center text-lg-right">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-dribbble"></i></a>
-          <a href="#"><i class="fab fa-behance"></i></a>
-        </div>
       </div>
     </div>
   </div>

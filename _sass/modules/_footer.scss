@@ -2,7 +2,7 @@
 	============================================================================================ */
 
 .footer-area{
-  background: #04091e;
+  background: $nav-transition-bg;
   padding-top:60px;
 
   @media(min-width: 1000px){
@@ -252,6 +252,36 @@ h6{
   color:$primary-color;
 }
 }        
+.footer-list-itme-a {
+  color: $nav-active-color;
+  width: initial !important;
+}
+
+.ul-footer-page {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: table;
+    margin: 0 auto;
+  }
+  
+  .li-footer-page {
+    float: left;
+  }
+  
+  .li-footer-page .a-footer-page {
+    display: block;
+    color: $nav-active-color;
+    text-align: center;
+    padding: 0px 24px 0px 0px;
+    text-decoration: none;
+  }
+  
+//   .li-footer-page .a-footer-page:hover {
+//     background-color: #111111;
+//   }
+
 
 /* footer style end
 	============================================================================================ */
