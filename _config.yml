@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -27,39 +27,6 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-# social media
-twitter_username: jekyllrb
-github_username:  jekyll
-rss_url: ""
-facebook_url: "https://www.facebook.com/"
-github_url:  "https://github.com/"
-twitter_url: "https://twitter.com/"
-linkedin_url: "https://www.linkedin.com/company/"
-youtube_url: ""
-
-# Sitemap
-link_tools:
-  - title: "Overview"
-    url: "https://www.google.com/"
-  - title: "Overview l2"
-    url: "https://www.google.com/"
-link_services:
-  - title: "Service"
-    url: "https://www.google.com/"
-  - title: "Service l2"
-    url: "https://www.google.com/"
-resources_limit: 3    
-link_company:
-  - title: "Company"
-    url: "https://www.google.com/"
-  - title: "Company l2"
-    url: "https://www.google.com/"
-
-# Contact Us
-action_url: "https://formspree.io/xknqrlvg"
-redirect_url: "http://127.0.0.1:4000/contactus/"
-
-# Look & Feel configuation
 # font
 google_font: "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700"
 title_font_family: "Source Sans Pro"
@@ -81,6 +48,34 @@ nav_transition_background_color: "#14011e"
 footer_title_color: "#ffffff"
 footer_text_color: "#77798f"
 
+# social media
+facebook_url: "https://www.facebook.com/"
+github_url: "https://github.com/"
+twitter_url: "https://twitter.com/"
+linkedin_url: "https://www.linkedin.com/company/"
+
+# sitemap
+link_tools: #to show tools list in homepage footer section.
+  - title: "Overview"
+    url: "https://www.google.com/"
+  - title: "Overview l2"
+    url: "https://www.google.com/"
+link_services: #to show service list in homepage footer section.
+  - title: "Service"
+    url: "https://www.google.com/"
+  - title: "Service l2"
+    url: "https://www.google.com/"
+resources_limit: 3 #to limit number of resources that will be display in homepage footer section.
+link_company: #to show company list in homepage footer section.
+  - title: "Company"
+    url: "https://www.google.com/"
+  - title: "Company l2"
+    url: "https://www.google.com/"
+
+# Contact Us
+action_url: "https://formspree.io/xknqrlvg"
+redirect_url: "http://127.0.0.1:4000/contactus/"
+
 #snippet of a posts’s content
 excerpt_separator: <!--more-->
 
@@ -90,15 +85,15 @@ plugins:
   - jekyll-feed
   - jekyll-paginate-v2
   # - jekyll-paginate-category
-  
+
 # Pagination Settings
 pagination:
   enabled: true
   per_page: 6
-  permalink: '/page/:num/'
-  title: ' - page :num'
+  permalink: "/page/:num/"
+  title: " - page :num"
   limit: 0
-  sort_field: 'date'
+  sort_field: "date"
   sort_reverse: true# Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

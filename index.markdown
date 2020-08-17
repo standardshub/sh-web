@@ -4,12 +4,12 @@
 
 layout: home
 tagline:
-    background_color: "#14011e"
-    line1: by standards professionals
-    line1_color: "#ffffff"
-    line2: for standards professionals
-    description: Standards Hub is an innovative kind of Standards Development Organization (SDO) where the needs for wireless industry consensus versus the quick and accurate creation of specifications and other technical documentation are balanced via a working group-driven, efficient and agile process.
-    description_color:  "#ccdfff"
+  background_color: "#14011e"
+  line1: by standards professionals
+  line1_color: "#ffffff"
+  line2: for standards professionals
+  description: Standards Hub is an innovative kind of Standards Development Organization (SDO) where the needs for wireless industry consensus versus the quick and accurate creation of specifications and other technical documentation are balanced via a working group-driven, efficient and agile process.
+  description_color: "#ccdfff"
 blocks:
   - layout: "block_text_image"
     title: Accomplish your company’s goals
@@ -41,9 +41,9 @@ blocks:
         image: assets/images/home/service3.png
   - layout: "block_text_cards"
     header:
-        title: Standard Hubs Work Program
-        paragraph: The Standard Hubs Work Program (WP) employs a lightweight, working group-focused process where members can create a new work item in less than a week. Working Groups (WGs) define their own process, tools, partnerships and cadence.
-        image: assets/images/home/section-icon.png
+      title: Standard Hubs Work Program
+      paragraph: The Standard Hubs Work Program (WP) employs a lightweight, working group-focused process where members can create a new work item in less than a week. Working Groups (WGs) define their own process, tools, partnerships and cadence.
+      image: assets/images/home/section-icon.png
     card_per_line: 3
     cards:
       - title: Communications
@@ -58,11 +58,12 @@ blocks:
         paragraph: The IOP Working Group produces high quality test specifications, facilitating testing of implementations of OMA SpecWorks specifications and, in some cases, producing TTCN test code for the validation of specifications.
         button_lable: "Lean More"
         button_url: ""
+
   - layout: "block_image_cards"
     header:
-        title: Standard Hubs Work Program
-        paragraph: The Standard Hubs Work Program (WP) employs a lightweight, working group-focused process where members can create a new work item in less than a week. Working Groups (WGs) define their own process, tools, partnerships and cadence.
-        image: assets/images/home/section-icon.png
+      title: Standard Hubs Work Program
+      paragraph: The Standard Hubs Work Program (WP) employs a lightweight, working group-focused process where members can create a new work item in less than a week. Working Groups (WGs) define their own process, tools, partnerships and cadence.
+      image: assets/images/home/section-icon.png
     card_per_line: 3
     cards:
       - title: Communications
