@@ -8,7 +8,8 @@ blocks_before:
     image: /assets/images/banner/banner-contactus.jpg
   - layout: "block_logo_cards"
     header:
-        title: Organizations
+      title: Organizations
+      paragraph: The Standard Hubs Work Program (WP) employs a lightweight, working group-focused process where members can create a new work item in less than a week. Working Groups (WGs) define their own process, tools, partnerships and cadence.
     card_per_line: 4
     cards:
       - image: /assets/images/home/service1.png
