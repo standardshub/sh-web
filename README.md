@@ -2,10 +2,10 @@
 This repository is dedicated to develop SH website.
 
 **Production site**
-* http://standardshub.s3-website-us-west-1.amazonaws.com
+* http://www.standardshub.io
 
 **Development site**
-* http://devstandardshub.s3-website-us-west-1.amazonaws.com
+* http://devwww.standardshub.io
 
 ## Requirements
 * ruby (2.6 or at least 2.4)
