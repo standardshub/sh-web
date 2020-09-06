@@ -26,9 +26,7 @@ blocks:
   - layout: "block_text"
     title: Our Services
     paragraph: We have assembled a set of tools, a team, and procedures that are well-suited to a small group of companies with a common interest to spin up a simple effort that results in a pre-standards body of work, as well as a large scale, well-funded project with aspirations of creating a worldwide standard.
-
     We can guide you through the consortium lifecycle from formation to the ongoing governance, the technical collaboration, and the finance and administration. We consider ourselves a part of your team with a singular focus on the execution of your mission.  We manage all the core business functions, so you can concentrate on delivering the best possible specifications for your industry.
-
     image: assets/images/home/section-icon.png
   - layout: "block_icon_cards"
     card_per_line: 3
@@ -46,7 +44,6 @@ blocks:
     header:
       title: Our Services
       paragraph: We have assembled a set of tools, a team, and procedures that are well-suited to a small group of companies with a common interest to spin up a simple effort that results in a pre-standards body of work, as well as a large scale, well-funded project with aspirations of creating a worldwide standard.
-
       We can guide you through the consortium lifecycle from formation to the ongoing governance, the technical collaboration, and the finance and administration. We consider ourselves a part of your team with a singular focus on the execution of your mission.  We manage all the core business functions, so you can concentrate on delivering the best possible specifications for your industry.
       image: assets/images/home/section-icon.png
     card_per_line: 3
@@ -63,12 +60,10 @@ blocks:
         paragraph: Now that you have settled on the mission, scope, and structure of your consortium, you need to connect with other stakeholders your industry.
         button_lable: "Lean More"
         button_url: ""
-
   - layout: "block_image_cards"
     header:
       title: Our Services
       paragraph: We have assembled a set of tools, a team, and procedures that are well-suited to a small group of companies with a common interest to spin up a simple effort that results in a pre-standards body of work, as well as a large scale, well-funded project with aspirations of creating a worldwide standard. 
-
       We can guide you through the consortium lifecycle from formation to the ongoing governance, the technical collaboration, and the finance and administration. We consider ourselves a part of your team with a singular focus on the execution of your mission.  We manage all the core business functions, so you can concentrate on delivering the best possible specifications for your industry.
       image: assets/images/home/section-icon.png
     card_per_line: 3
