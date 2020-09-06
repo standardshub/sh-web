@@ -12,7 +12,7 @@ tagline:
   description_color: "#ccdfff"
 blocks:
   - layout: "block_text_image"
-    title: Why We Can Help You?
+    title: Why We Can Help You
     paragraph: Are you looking for a specifications factory that continually strives to optimize the delicate balance between the need for consensus and time to market through tools and simplified procedures, while empowering the people doing the work to complete a work item in the minimal amount of time. Markdown at [jekyllrb.com](https://jekyllrb.com/)
     image: assets/images/home/photo_example2.png
     button_lable: "Lean More"
