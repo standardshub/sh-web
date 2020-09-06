@@ -5,10 +5,10 @@
 layout: home
 tagline:
   background_color: "#14011e"
-  line1: by standards professionals
+  line1: For Standards Professionals
   line1_color: "#ffffff"
-  line2: for standards professionals
-  description: Standards Hub is an innovative kind of Standards Development Organization (SDO) where the needs for wireless industry consensus versus the quick and accurate creation of specifications and other technical documentation are balanced via a working group-driven, efficient and agile process.
+  line2: Bu Standards Professionals
+  description: The Standards Hub team has long experience in the development of Technical Standards and we know how to run successful consortia that create and implement meaningful Technical Specifications. We understand volunteer-led organizations - their governance and their technical, operational, financial, and legal requirements.  We focus on keeping costs down, service levels up, and on helping your subject matter experts get to “yes” on the important matters of a successful specification.  We understand that when we do an exceptional job managing the operations of an organization, the Board of Directors and members can build successful standards.
   description_color: "#ccdfff"
 blocks:
   - layout: "block_text_image"
