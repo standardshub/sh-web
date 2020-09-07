@@ -58,7 +58,11 @@
 
     <div class="row align-items-center mt-4">
       <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+<<<<<<< HEAD
+        {% include social_list.html center=1 %}
+=======
         {% include social_list.html %}
+>>>>>>> origin
       </div>
       <div class="col-lg-6 col-md-6 col-sm-12 mb-4 text-center">
         <img
@@ -93,12 +97,9 @@
         <p
           class="mt-2 mb-2 col-lg-6 col-sm-12 footer-text m-0 text-center text-lg-right"
         >
-          Copyright &copy;
-          <script>
-            document.write(new Date().getFullYear());
-          </script>
-          {{site.title}} All rights reserved
-          <span class="ml-4">v1.0</span>
+          Copyright &copy; {{site.copy_right_year}} {{site.title}} All rights
+          reserved
+          <span class="ml-4">{{site.version}}</span>
         </p>
       </div>
     </div>
