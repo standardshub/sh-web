@@ -1,38 +1,42 @@
 <section class="section-padding bg-gray">
-    <div class="container">
-      {% if include.header %} 
-      <div class="section-intro text-center pb-90px">
-        <img class="section-intro-img" src="{{include.header.image}}" alt="">
-        <h2>{{include.header.title}}</h2>
-        <p>{{include.header.paragraph}}</p>
-      </div>
-      {% endif %} 
-      <div class="row">
-        {% for item in include.cards %}
-        {% assign card_per = include.card_per_line | plus: 0 %}
-        {% if card_per >= 1 and card_per <= 4 %} 
-          {% assign col =  12 | divided_by: card_per %}
-          {% assign divConClassName = "col-lg-" | append: col %}
-        {% else %} 
-          {% assign divConClassName = "col-lg" %}
-        {% endif %}
-          <div class="col-md-6 {{ divConClassName }}  mb-4 mb-lg-4">
-            <div class="card-blog">
-              <img class="card-img rounded-0" src="{{item.image}}" alt="">
-              <div class="card-blog-body">
-                <a href="#">
-                  <h4>{{item.title}}</h4>
-                </a>
-                <!-- <ul class="card-blog-info">
-                  <li><i class="ti-notepad"></i></span>Jan 03, 2018</li>
-                  <li><i class="ti-comments-smiley"></i></span>03 Comments</li>
-                </ul> -->
-                <p>{{ item.paragraph }}</p>
-              </div>
+  <div class="container">
+    {% if include.header %}
+    <div class="section-intro text-center pb-90px">
+      <img class="section-intro-img" src="{{include.header.image}}" alt="" />
+      <h2>{{include.header.title}}</h2>
+      <p>{{include.header.paragraph}}</p>
+    </div>
+    {% endif %}
+    <div class="row">
+      {% for item in include.cards %} {% assign card_per = include.card_per_line
+      | plus: 0 %} {% if card_per >= 1 and card_per <= 4 %} {% assign col = 12 |
+      divided_by: card_per %} {% assign divConClassName = "col-lg-" | append:
+      col %} {% else %} {% assign divConClassName = "col-lg" %} {% endif %}
+      <div class="col-md-6 {{ divConClassName }}  mb-4 mb-lg-4">
+        {% if item.button_lable %}
+        <div class="card-blog">
+          <img class="card-img rounded-0" src="{{item.image}}" alt="" />
+          <div class="card-blog-body">
+            <h4>{{item.title}}</h4>
+            <p>{{ item.paragraph }}</p>
+            <a class="button" href="{{ item.button_url }}"
+              >{{ item.button_lable }}</a
+            >
+          </div>
+        </div>
+        {% else %}
+        <a href="{{item.button_url}}">
+          <div class="card-blog">
+            <img class="card-img rounded-0" src="{{item.image}}" alt="" />
+            <div class="card-blog-body">
+              <h4>{{item.title}}</h4>
+              <p>{{ item.paragraph }}</p>
             </div>
           </div>
-        {% endfor %}
-     
+        </a>
+        {% endif %}
       </div>
+      {% endfor %}
     </div>
-  </section>
+  </div>
+</section>

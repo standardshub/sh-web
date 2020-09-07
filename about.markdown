@@ -6,32 +6,47 @@ order: 1
 blocks_before:
   - layout: "block_text"
     title: About Standard Hub
-    paragraph: The Standard Hubs Work Program (WP) employs a lightweight, working group-focused process where members can create a new work item in less than a week. Working Groups (WGs) define their own process, tools, partnerships and cadence.
+    paragraph:
     image: ../assets/images/home/section-icon.png
 blocks_after:
   - layout: "block_image_cards"
     header:
-      title: Standard Hubs Work Program
-      paragraph: The Standard Hubs Work Program (WP) employs a lightweight, working group-focused process where members can create a new work item in less than a week. Working Groups (WGs) define their own process, tools, partnerships and cadence.
-      image: ../assets/images/home/section-icon.png
-    card_per_line: 3
+      title: Our Team
+      paragraph:
+    card_per_line: 4
     cards:
-      - title: Communications
-        paragraph: The COM Working Group is responsible for service layer standardization of communications related technologies, including areas such as Messaging, Push-to-talk over Cellular, Presence, Contact Information and Spam Reporting.
-        image: ../assets/images/gallery/g1.png
-        button_lable: "Lean More"
-        button_url: ""
-      - title: Content Delivery
-        paragraph: The CD Working Group is chartered to define the basic delivery mechanisms, bi-directional exchange mechanisms, and the processing of key content formats, including the semantics and user agents, behavior and programming interfaces.
-        image: ../assets/images/gallery/g2.png
-        button_lable: "Lean More"
-        button_url: ""
-      - title: Interoperability
-        paragraph: The IOP Working Group produces high quality test specifications, facilitating testing of implementations of OMA SpecWorks specifications and, in some cases, producing TTCN test code for the validation of specifications.
-        image: ../assets/images/gallery/g3.png
-        button_lable: "Lean More"
-        button_url: ""
+      - title: Seth Newberry
+        paragraph: Co-Founder
+        image: ../assets/images/about/Seth_Newberry.jpeg
+        button_url: "https://www.linkedin.com/in/seth-newberry-276164/"
+      - title: Joaquin Prado
+        paragraph: Co-Founder
+        image: ../assets/images/about/Joaquin_Prado.jpeg
+        button_url: "https://www.linkedin.com/in/jpradocueva/"
+      - title: Lisa Brady Robotti
+        paragraph: Accounting
+        image: ../assets/images/about/Lisa_Brady_Robotti.jpeg
+        button_url: "https://www.linkedin.com/in/lisa-brady-robotti-0172b210/"
+      - title: Michelle Janata
+        paragraph: Member Services
+        image: ../assets/images/about/Michelle_Janata.jpeg
+        button_url: "https://www.linkedin.com/in/michelle-janata-31120310/"
+      - title: Elizabeth Rose
+        paragraph: Marketing
+        image: ../assets/images/about/Elizabeth_Rose.jpeg
+        button_url: "https://www.linkedin.com/in/elizhrosemarketing"
+      - title: Sean Mcilroy
+        paragraph: Program Manager
+        image: ../assets/images/about/Sean_Mcilroy.jpeg
+        button_url: "https://www.linkedin.com/in/sean-mcilroy-bb3b5548/"
+      - title: John Mudge
+        paragraph: Program Manager
+        image: ../assets/images/about/John_Mudge.jpeg
+        button_url: "https://www.linkedin.com/in/john-mudge-0b644b/"
+      - title: Nathan Dixon
+        paragraph: System Architect
+        image: ../assets/images/about/Nathan_Dixon.jpeg
+        button_url: "https://www.linkedin.com/in/nathandixon/"
 ---
 
-StandardHub SpecWorks is an innovative kind of Standards Development Organization (SDO) where the needs for wireless industry consensus versus the quick and accurate creation of specifications and other technical documentation are balanced via a working group-driven, efficient and agile process. As a non-profit organization with a long history in mobile and Internet of Things (IoT) technology development, OMA SpecWorks is a specifications factory where industry-leading companies bring their ideas and talent to build market-accelerating standards that allow products and services to interoperate seamlessly across fixed and mobile wireless data networks.
-ABOUT This is the about Markdown at [jekyllrb.com](https://jekyllrb.com/)
+The Standards Hub team has long experience in the development of technical standards and we know how to run successful consortia that create and implement meaningful technical specifications. We understand volunteer-led organizations - their governance and their technical, operational, financial, and legal requirements. We focus on keeping costs down, service levels up, and on helping your subject matter experts get to “yes” on the important matters of a successful specification. We understand that when we do an exceptional job managing the operations of an organization, the Board of Directors and members can build successful standards.
