@@ -94,13 +94,13 @@ blocks:
         image_align: right  # left|center|right
         button_lable: "Lean More"
         button_url: ""
-      - title: Membership
+      - title: Membership Services
         paragraph: Now that you have settled on the mission, scope, and structure of your consortium, you need to connect with other stakeholders your industry.
         image: assets/images/home/section-icon.png
         image_align: right  # left|center|right
         button_lable: "Lean More"
         button_url: ""
-      - title: F & A
+      - title: Finance & Accounting
         paragraph: Consortia rely on the financial contributions of its members.  This requires invoicing, collections, and tax filings.
         image: assets/images/home/section-icon.png
         image_align: right  # left|center|right
@@ -112,7 +112,7 @@ blocks:
         image_align: right  # left|center|right
         button_lable: "Lean More"
         button_url: ""
-      - title: Tech Lifecycle
+      - title: Lifecycle Management
         paragraph: Most technical consortia are formed for a specific purpose.  But over time, their mission changes and may be considered complete.
         image: assets/images/home/section-icon.png
         image_align: right  # left|center|right
