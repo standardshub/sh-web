@@ -14,13 +14,13 @@ layout: default
         <div class="col-12">
           {%- if page.tagline.line1 -%}
         <h3 {% if page.tagline.line1_color %}
-            style="color:{{page.tagline.line1_color}}" 
+            style="color:{{page.tagline.line1_color}}; font-size:{{page.tagline.line1_font_size}};" 
             {%- endif -%}
         >{{ page.tagline.line1 }}</h4>
           {%- endif -%}
           {%- if page.tagline.line2 -%}
           <h1 {% if page.tagline.line1_color %}
-            style="color:{{page.tagline.line2_color}}" 
+            style="color:{{page.tagline.line2_color}}; font-size:{{page.tagline.line2_font_size}};" 
             {%- endif -%}
           >{{ page.tagline.line2 }}</h1>
           {%- endif -%}
