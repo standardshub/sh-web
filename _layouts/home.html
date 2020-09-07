@@ -14,13 +14,13 @@ layout: default
         <div class="col-12">
           {%- if page.tagline.line1 -%}
         <h3 {% if page.tagline.line1_color %}
-            style="color:{{page.tagline.line1_color}}" 
+            style="color:{{page.tagline.line1_color}}; font-size:{{page.tagline.line1_font_size}};" 
             {%- endif -%}
         >{{ page.tagline.line1 }}</h4>
           {%- endif -%}
           {%- if page.tagline.line2 -%}
           <h1 {% if page.tagline.line1_color %}
-            style="color:{{page.tagline.line2_color}}" 
+            style="color:{{page.tagline.line2_color}}; font-size:{{page.tagline.line2_font_size}};" 
             {%- endif -%}
           >{{ page.tagline.line2 }}</h1>
           {%- endif -%}
@@ -41,35 +41,6 @@ layout: default
       {% include block.html block=item %}  
     {% endfor %}
  <!-- ================Blocks Area End =================-->
-  <!-- <section class="section-margin generic-margin">
-    <div class="container">
-      {{ content }}
-    </div>
-   
-  </section>
-  <section class="bg-gray section-padding magic-ball magic-ball-about">
-    <div class="container">
-  {%- if site.posts.size > 0 -%}
-  <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-  <ul class="post-list">
-    {%- for post in site.posts -%}
-    <li>
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      <span class="post-meta">{{ post.date | date: date_format }}</span>
-      <h3>
-        <a class="post-link" href="{{ post.url | relative_url }}">
-          {{ post.title | escape }}
-        </a>
-      </h3>
-      {%- if site.show_excerpts -%}
-      {{ post.excerpt }}
-      {%- endif -%}
-    </li>
-    {%- endfor -%}
-  </ul>
-  {%- endif -%}
-</div>
-</section> -->
  
 
 
