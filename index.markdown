@@ -7,7 +7,9 @@ tagline:
   background_color: "#14011e"
   line1: by standards professionals
   line1_color: "#ffffff"
+  #line1_font_size: "20px" # default value = 20px
   line2: for standards professionals
+  #line2_font_size: "40px" # default value = 40px
   description: Standards Hub is an innovative kind of Standards Development Organization (SDO) where the needs for wireless industry consensus versus the quick and accurate creation of specifications and other technical documentation are balanced via a working group-driven, efficient and agile process.
   description_color: "#ccdfff"
 blocks:

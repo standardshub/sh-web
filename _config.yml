@@ -48,13 +48,15 @@ nav_transition_background_color: "#14011e"
 footer_title_color: "#ffffff"
 footer_text_color: "#77798f"
 copy_right_year: "2020"
-version: "v1.0"
+version: "v0.1"
 
 # social media
-facebook_url: "https://www.facebook.com/"
-github_url: "https://github.com/"
-twitter_url: "https://twitter.com/"
-linkedin_url: "https://www.linkedin.com/company/"
+rss_url: "/assets/feed.xml" #update the feed content in feed.xml file
+facebook_url: "https://www.facebook.com/{company}" #link to your facebook account
+twitter_url: "https://twitter.com/{company}" #link to your twitter account
+github_url: "https://github.com/{company}" #link to your github account
+linkedin_url: "https://www.linkedin.com/{company}" #link to your linkedin account
+youtube_url: "https://www.youtube.com/{company}" #link to your youtube account
 
 # sitemap
 link_tools: #to show tools list in homepage footer section.
