@@ -25,22 +25,54 @@ blocks:
     image: assets/images/home/photo_example1.png
     button_lable: "See More"
     button_url: ""
-  - layout: "block_text"
-    title: Standard Hubs Work Program
-    paragraph: The Standard Hubs Work Program (WP) employs a lightweight, working group-focused process where members can create a new work item in less than a week. Working Groups (WGs) define their own process, tools, partnerships and cadence.
+  - layout: "block_text_fluid"
+    title: Our Services
+    paragraph: We have assembled a set of tools, a team, and procedures that are well-suited to a small group of companies with a common interest to spin up a simple effort that results in a pre-standards body of work, as well as a large scale, well-funded project with aspirations of creating a worldwide standard. <br/><br/>We can guide you through the consortium lifecycle from formation to the ongoing governance, the technical collaboration, and the finance and administration. We consider ourselves a part of your team with a singular focus on the execution of your mission.  We manage all the core business functions, so you can concentrate on delivering the best possible specifications for your industry.
+    paragraph_aligh: left # center | left
     image: assets/images/home/section-icon.png
   - layout: "block_icon_cards"
-    card_per_line: 3
+    card_per_line: 4
     cards:
-      - title: Communications
-        paragraph: The COM Working Group is responsible for service layer standardization of communications related technologies, including areas such as Messaging, Push-to-talk over Cellular, Presence, Contact Information and Spam Reporting.
+      - title: Formation
+        paragraph: There are a number of ways to effectively start a new technical standards project. We will guide you to the path that best fits your needs.
         image: assets/images/home/service1.png
-      - title: Content Delivery
-        paragraph: The CD Working Group is chartered to define the basic delivery mechanisms, bi-directional exchange mechanisms, and the processing of key content formats, including the semantics and user agents, behavior and programming interfaces.
+        button_lable: "Lean More"
+        button_url: ""
+      - title: Governance
+        paragraph: Technical consortia must comply with the laws that govern non-profits and they should be governed neutrally for the benefit of all their stakeholders.
         image: assets/images/home/service2.png
-      - title: Interoperability
-        paragraph: The IOP Working Group produces high quality test specifications, facilitating testing of implementations of OMA SpecWorks specifications and, in some cases, producing TTCN test code for the validation of specifications.
+        button_lable: "Lean More"
+        button_url: ""
+      - title: Working Group Admin
+        paragraph: We have helped consortium members create hundreds of specifications.  Every effort is unique, but they have some common features.
         image: assets/images/home/service3.png
+        button_lable: "Lean More"
+        button_url: ""
+      - title: Membership Services
+        paragraph: Now that you have settled on the mission, scope, and structure of your consortium, you need to connect with other stakeholders your industry.
+        image: assets/images/home/service3.png
+        button_lable: "Lean More"
+        button_url: ""
+      - title: Finance & Accounting
+        paragraph: Consortia rely on the financial contributions of its members.  This requires invoicing, collections, and tax filings.
+        image: assets/images/home/service3.png
+        button_lable: "Lean More"
+        button_url: ""
+      - title: Events
+        paragraph: Standards professionals are heavy travelers. The hallways of standards meetings often create some of the best breakthroughs.
+        image: assets/images/home/service3.png
+        button_lable: "Lean More"
+        button_url: ""
+      - title: Lifecycle Management
+        paragraph: Most technical consortia are formed for a specific purpose.  But over time, their mission changes and may be considered complete.
+        image: assets/images/home/service3.png
+        button_lable: "Lean More"
+        button_url: ""
+      - title: Marketing & PR
+        paragraph: Our marketing team can support consortia serving specific needs for a small group, as well as those tackling big issues with complex components.
+        image: assets/images/home/service3.png
+        button_lable: "Lean More"
+        button_url: ""
   - layout: "block_text_cards"
     header:
       title: Standard Hubs Work Program
