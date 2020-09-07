@@ -47,6 +47,8 @@ nav_transition_background_color: "#14011e"
 #footer area
 footer_title_color: "#ffffff"
 footer_text_color: "#77798f"
+copy_right_year: "2020"
+version: "v1.0"
 
 # social media
 facebook_url: "https://www.facebook.com/"
