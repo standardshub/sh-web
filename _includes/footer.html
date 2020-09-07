@@ -2,10 +2,10 @@
 <footer class="footer-area pb-1">
   <div class="container">
     <div class="row mb-4">
-      <div class="col-lg-2  col-md-6 col-sm-6">
+      <div class="col-lg-2 col-md-6 col-sm-6">
         <div class="single-footer-widget">
-          {% assign checkTools = site.link_tools | strip_newlines %}
-          {% if checkTools != "" %} 
+          {% assign checkTools = site.link_tools | strip_newlines %} {% if
+          checkTools != "" %}
           <h6>Tools</h6>
           <ul>
             {% for is_tool in site.link_tools %}
@@ -17,8 +17,8 @@
       </div>
       <div class="col-lg-2 col-md-6 col-sm-6">
         <div class="single-footer-widget">
-          {% assign checkServices = site.link_services | strip_newlines %}
-          {% if checkServices != "" %} 
+          {% assign checkServices = site.link_services | strip_newlines %} {% if
+          checkServices != "" %}
           <h6>Services</h6>
           <ul>
             {% for is_service in site.link_services %}
@@ -28,22 +28,23 @@
           {% endif %}
         </div>
       </div>
-      <div class="col-lg-2  col-md-6 col-sm-6">
+      <div class="col-lg-2 col-md-6 col-sm-6">
         <div class="single-footer-widget">
           <h6>Resources</h6>
           <ul>
-            {% for post_resource in site.categories.resources limit: site.resources_limit %}
-              {% if post_resource.url %}
-                  <li><a href="{{ post_resource.url }}">{{ post_resource.title }}</a></li>
-              {% endif %}
-            {% endfor %}
+            {% for post_resource in site.categories.resources limit:
+            site.resources_limit %} {% if post_resource.url %}
+            <li>
+              <a href="{{ post_resource.url }}">{{ post_resource.title }}</a>
+            </li>
+            {% endif %} {% endfor %}
           </ul>
         </div>
       </div>
-      <div class="col-lg-2  col-md-6 col-sm-6">
+      <div class="col-lg-2 col-md-6 col-sm-6">
         <div class="single-footer-widget mail-chimp">
-          {% assign checkCompany = site.link_company | strip_newlines %}
-          {% if checkCompany != "" %} 
+          {% assign checkCompany = site.link_company | strip_newlines %} {% if
+          checkCompany != "" %}
           <h6 class="mb-20">Company</h6>
           <ul>
             {% for is_company in site.link_company %}
@@ -56,36 +57,47 @@
     </div>
 
     <div class="row align-items-center mt-4">
-      <div class="col-lg-6  col-md-6 col-sm-12 mb-4">
-        {% include social_list.html center=1 %}
+      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+        {% include social_list.html %}
       </div>
       <div class="col-lg-6 col-md-6 col-sm-12 mb-4 text-center">
-        <img class="logo_footer_img float-md-right" src="/assets/images/logo_footer.png" alt="">
+        <img
+          class="logo_footer_img float-md-right"
+          src="/assets/images/logo_footer.png"
+          alt=""
+        />
       </div>
-    </div> 
+    </div>
 
     <div class="footer-bottom mt-2">
       <div class="row align-items-center">
-        <div class="mt-2 mb-2 col-lg-6 col-sm-12 footer-social text-center text-md-left">
+        <div
+          class="mt-2 mb-2 col-lg-6 col-sm-12 footer-social text-center text-md-left"
+        >
           <ul class="ul-footer-page ml-md-0">
-            {% assign site_pages = site.pages | sort: "order" %}
-            {% for is_page in site_pages %}
-              {% assign checkFooter = is_page.footer | strip_newlines %}
-              {% if checkFooter != "" %} 
-                {% if is_page.title and is_page.autogen == nil %}
-                  {% assign pageUrl = page.url | split: "/" %}
-                  {% assign itemUrl = is_page.url | split: "/" %}
-                  <li class="li-footer-page">
-                    <a class="a-footer-page footer-list-itme-a" href="{{ is_page.url | relative_url }}">{{ is_page.title | escape }}</a>
-                  </li>
-                {% endif %}
-              {% endif %}
-            {%- endfor -%}
+            {% assign site_pages = site.pages | sort: "order" %} {% for is_page
+            in site_pages %} {% assign checkFooter = is_page.footer |
+            strip_newlines %} {% if checkFooter != "" %} {% if is_page.title and
+            is_page.autogen == nil %} {% assign pageUrl = page.url | split: "/"
+            %} {% assign itemUrl = is_page.url | split: "/" %}
+            <li class="li-footer-page">
+              <a
+                class="a-footer-page footer-list-itme-a"
+                href="{{ is_page.url | relative_url }}"
+                >{{ is_page.title | escape }}</a
+              >
+            </li>
+            {% endif %} {% endif %} {%- endfor -%}
           </ul>
         </div>
-        <p class="mt-2 mb-2 col-lg-6 col-sm-12 footer-text m-0 text-center text-lg-right">
+        <p
+          class="mt-2 mb-2 col-lg-6 col-sm-12 footer-text m-0 text-center text-lg-right"
+        >
           Copyright &copy;
-          <script>document.write(new Date().getFullYear());</script> {{site.title}} All rights reserved
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          {{site.title}} All rights reserved
           <span class="ml-4">v1.0</span>
         </p>
       </div>
