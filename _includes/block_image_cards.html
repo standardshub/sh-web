@@ -13,7 +13,7 @@
       divided_by: card_per %} {% assign divConClassName = "col-lg-" | append:
       col %} {% else %} {% assign divConClassName = "col-lg" %} {% endif %}
       <div class="col-md-6 {{ divConClassName }}  mb-4 mb-lg-4">
-        {% if item.button_lable %}
+        {% if item.button_label %}
         <div class="card-blog">
           <img class="card-img rounded-0" src="{{item.image}}" alt="" />
           <div class="card-blog-body">
@@ -24,9 +24,9 @@
             {% else %}
               {% assign buttonClassName = "button" %}
             {% endif %}
-            {% if item.button_url && item.button_lable  %}
+            {% if item.button_url && item.button_label  %}
             <a class="{{ buttonClassName}}" href="{{ item.button_url }}"
-              >{{ item.button_lable }}</a >
+              >{{ item.button_label }}</a >
             {% endif %}
           </div>
         </div>
