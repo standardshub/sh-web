@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-order: 1
+order: 10
 blocks_before:
   - layout: "block_text"
     title: About Standard Hub

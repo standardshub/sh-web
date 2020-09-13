@@ -31,13 +31,22 @@
         {% assign divCardImg = "service-card-img" %}
         {% assign imgClass = "img-fluid" %}
         {% endif %}
-        <div class="service-card text-center">
+        <div class="service-card text-{{ item.align || 'center' }}">
           <div class="{{ divCardImg }}">
             <img class="{{ imgClass }}" src="{{item.image}}" alt="">
           </div>
           <div class="service-card-body">
             <h3>{{item.title}}</h3>
             <p>{{ item.paragraph }}</p>
+            {% if item.button_style == 'link'  %}
+            {% assign buttonClassName = "" %}
+          {% else %}
+            {% assign buttonClassName = "button" %}
+          {% endif %}
+          {% if item.button_url && item.button_lable  %}
+             <a class="{{ buttonClassName}}"
+              href="{{ item.button_url }}">{{ item.button_lable }}</a>
+          {% endif %}
           </div>
         </div>
       </div>

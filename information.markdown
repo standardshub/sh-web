@@ -2,6 +2,6 @@
 layout: page
 title: information
 permalink: /information/
-order: 4
+order: 40
 parent: true
 ---
