@@ -19,7 +19,12 @@
           <div class="card-blog-body">
             <h4>{{item.title}}</h4>
             <p>{{ item.paragraph }}</p>
-            <a class="button" href="{{ item.button_url }}"
+            {% if item.button_style == 'link'  %}
+              {% assign buttonClassName = "" %}
+            {% else %}
+              {% assign buttonClassName = "button" %}
+            {% endif %}
+            <a class="{{ buttonClassName}}" href="{{ item.button_url }}"
               >{{ item.button_lable }}</a
             >
           </div>

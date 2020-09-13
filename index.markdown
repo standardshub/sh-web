@@ -19,12 +19,14 @@ blocks:
     image: assets/images/home/photo_example2.png
     button_lable: "Lean More"
     button_url: "https://www.google.com/"
+    button_style: "link" #display style as link | button(default)
   - layout: "block_image_text"
     title: Developers wanted
     paragraph: Standard Hub has more than 150 specifications defined at the Open Mobile Alliance, IOT Smart Objects created at the IPSO Alliance, and developer tools  and resources that facilitate the development of products based on LightweightM2M (LwM2M), the IoT industry’s protocol for device management.
     image: assets/images/home/photo_example1.png
     button_lable: "See More"
     button_url: ""
+    # button_style: "link" #display style as link | button(default)
   - layout: "block_text_fluid"
     title: Our Services
     paragraph: We have assembled a set of tools, a team, and procedures that are well-suited to a small group of companies with a common interest to spin up a simple effort that results in a pre-standards body of work, as well as a large scale, well-funded project with aspirations of creating a worldwide standard. <br/><br/>We can guide you through the consortium lifecycle from formation to the ongoing governance, the technical collaboration, and the finance and administration. We consider ourselves a part of your team with a singular focus on the execution of your mission.  We manage all the core business functions, so you can concentrate on delivering the best possible specifications for your industry.
@@ -38,6 +40,7 @@ blocks:
         image: assets/images/home/service1.png
         button_lable: "Lean More"
         button_url: ""
+        button_style: "link" #display style as link | button(default)
       - title: Governance
         paragraph: Technical consortia must comply with the laws that govern non-profits and they should be governed neutrally for the benefit of all their stakeholders.
         image: assets/images/home/service2.png
@@ -82,6 +85,7 @@ blocks:
         image_align: right # left|center|right
         button_lable: "Lean More"
         button_url: ""
+        button_style: "link"
       - title: Governance
         paragraph: Technical consortia must comply with the laws that govern non-profits and they should be governed neutrally for the benefit of all their stakeholders.
         image: assets/images/home/section-icon.png
@@ -187,6 +191,7 @@ blocks:
         image: assets/images/gallery/g1.png
         button_lable: "Lean More"
         button_url: ""
+        button_style: "link" #display style as link | button(default)
       - title: Content Delivery
         paragraph: The CD Working Group is chartered to define the basic delivery mechanisms, bi-directional exchange mechanisms, and the processing of key content formats, including the semantics and user agents, behavior and programming interfaces.
         image: assets/images/gallery/g2.png
