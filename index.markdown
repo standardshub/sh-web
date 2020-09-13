@@ -203,4 +203,23 @@ blocks:
         image: assets/images/gallery/g3.png
         button_lable: "Lean More"
         button_url: ""
+  - layout: "block_image_cards"
+    card_per_line: 4
+    cards:
+      - title: Communications
+        paragraph: The COM Working Group is responsible for service layer standardization of communications related technologies, including areas such as Messaging, Push-to-talk over Cellular, Presence, Contact Information and Spam Reporting.
+        image: assets/images/gallery/g1.png
+        button_lable: "Lean More"
+        button_url: ""
+        button_style: "link" #display style as link | button(default)
+      - title: Content Delivery
+        paragraph: The CD Working Group is chartered to define the basic delivery mechanisms, bi-directional exchange mechanisms, and the processing of key content formats, including the semantics and user agents, behavior and programming interfaces.
+        image: assets/images/gallery/g2.png
+        button_lable: "Lean More"
+        button_url: ""
+      - title: Interoperability
+        paragraph: The IOP Working Group produces high quality test specifications, facilitating testing of implementations of OMA SpecWorks specifications and, in some cases, producing TTCN test code for the validation of specifications.
+        image: assets/images/gallery/g3.png
+        button_lable: "Lean More"
+        button_url: ""
 ---

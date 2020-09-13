@@ -2,7 +2,7 @@
 layout: page
 title: Partners
 permalink: /partners/
-order: 3
+order: 30
 blocks_before:
   - layout: "block_image_banner"
     image: /assets/images/banner/banner-contactus.jpg

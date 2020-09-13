@@ -2,7 +2,7 @@
 layout: page
 title: Blog
 permalink: /information/blog/
-order: 5
+order: 41
 subnav: true
 pagination: 
   enabled: true

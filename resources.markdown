@@ -2,7 +2,7 @@
 layout: page
 title: Resources
 permalink: /information/resources/
-order: 6
+order: 42
 subnav: true
 pagination: 
   enabled: true
