@@ -17,7 +17,9 @@
             {% else %}
               {% assign buttonClassName = "button" %}
             {% endif %}
+            {% if item.button_url && item.button_lable  %}
             <a class="{{ buttonClassName}}" href="{{ include.button_url }}">{{ include.button_lable }}</a>
+            {% endif %}
         </div>
         <div class="col-lg-6 col-md-6 mb-4 mb-md-0 ">
             <img class="img-fluid" src="{{ include.image }}" alt="">
@@ -41,7 +43,9 @@
             {% else %}
               {% assign buttonClassName = "button" %}
             {% endif %}
+            {% if item.button_url && item.button_lable  %}
             <a class="{{ buttonClassName}}" href="{{ include.button_url }}">{{ include.button_lable }}</a>
+            {% endif %}
         </div>
         <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
             <img class="img-fluid" src="{{ include.image }}" alt="">

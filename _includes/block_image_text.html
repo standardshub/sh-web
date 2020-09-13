@@ -20,7 +20,9 @@
             {% else %}
               {% assign buttonClassName = "button" %}
             {% endif %}
+            {% if item.button_url && item.button_lable  %}
             <a class="{{ buttonClassName}}" href="{{ include.button_url }}">{{ include.button_lable }}</a>
+            {% endif %}
         </div>
       </div>
     </div>
@@ -44,7 +46,9 @@
             {% else %}
               {% assign buttonClassName = "button" %}
             {% endif %}
+            {% if item.button_url && item.button_lable  %}
             <a class="{{ buttonClassName}}" href="{{ include.button_url }}">{{ include.button_lable }}</a>
+            {% endif %}
         </div>
       </div>
     {% endif %}

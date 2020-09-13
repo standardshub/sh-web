@@ -33,19 +33,20 @@ blocks:
     paragraph_aligh: left # center | left
     image: assets/images/home/section-icon.png
   - layout: "block_icon_cards"
-    card_per_line: 4
+    card_per_line: 3
     cards:
-      - title: Formation
+      - title: Formationsss
         paragraph: There are a number of ways to effectively start a new technical standards project. We will guide you to the path that best fits your needs.
         image: assets/images/home/service1.png
         button_lable: "Lean More"
-        button_url: ""
-        button_style: "link" #display style as link | button(default)
+        # button_url: ""
+        align: center # center | left | right
       - title: Governance
         paragraph: Technical consortia must comply with the laws that govern non-profits and they should be governed neutrally for the benefit of all their stakeholders.
         image: assets/images/home/service2.png
         button_lable: "Lean More"
         button_url: ""
+        button_style: "link" #display style as link | button(default)
       - title: Working Group Admin
         paragraph: We have helped consortium members create hundreds of specifications.  Every effort is unique, but they have some common features.
         image: assets/images/home/service3.png
