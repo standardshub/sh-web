@@ -80,6 +80,9 @@ link_company: #to show company list in homepage footer section.
 action_url: "https://formspree.io/xknqrlvg"
 redirect_url: "http://127.0.0.1:4000/contactus/"
 
+# Google services
+google_analytics: UA-178009148-1
+
 #snippet of a posts’s content
 excerpt_separator: <!--more-->
 
