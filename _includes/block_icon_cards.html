@@ -31,7 +31,7 @@
         {% assign divCardImg = "service-card-img" %}
         {% assign imgClass = "img-fluid" %}
         {% endif %}
-        <div class="service-card text-{{ item.align || 'center' }}">
+        <div class="service-card h-100 text-{{ item.align || 'center' }}">
           <div class="{{ divCardImg }}">
             <img class="{{ imgClass }}" src="{{item.image}}" alt="">
           </div>
