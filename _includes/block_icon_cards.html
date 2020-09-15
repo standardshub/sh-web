@@ -23,17 +23,27 @@
       {% else %}
       {% assign divConClassName = "col-lg" %}
       {% endif %}
+      
+      {% assign image_size = include.image_size | plus: 0 %}
+      {% if image_size > 0 %}
+      {% assign style_image_size = "height: " | append: image_size  %}
+      {% assign style_image_size = style_image_size | append: "px"  %}
+      {% else %}
+      {% assign style_image_size = "height: " | append: "initial"  %}
+      {% endif %}
+
+
       <div class="{{ divConClassName }} col-md-6 mb-4 mb-lg-0 pb-4">
         {% if include.logo == 1 %}
         {% assign divCardImg = "service-card-img block_logo_height" %}
         {% assign imgClass = "img-fluid w-auto h-100" %}
         {% else %}
         {% assign divCardImg = "service-card-img" %}
-        {% assign imgClass = "img-fluid" %}
+        {% assign imgClass = "img-fluid w-auto h-100" %}
         {% endif %}
         <div class="service-card h-100 text-{{ item.align || 'center' }}">
-          <div class="{{ divCardImg }}">
-            <img class="{{ imgClass }}" src="{{item.image}}" alt="">
+          <div class="{{ divCardImg }}" style="{{style_image_size}}">
+          <img class="{{ imgClass }}" src="{{item.image}}" alt="">
           </div>
           <div class="service-card-body">
             <h3>{{item.title}}</h3>
