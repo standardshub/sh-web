@@ -27,19 +27,21 @@ blocks:
     button_url: ""
   - layout: "block_text_fluid"
     title: Our Services
-    paragraph: We have assembled a set of tools, a team, and procedures that are well-suited to a small group of companies with a common interest to spin up a simple effort that results in a pre-standards body of work, as well as a large scale, well-funded project with aspirations of creating a worldwide standard. <br/><br/>We can guide you through the consortium lifecycle from formation to the ongoing governance, the technical collaboration, and the finance and administration. We consider ourselves a part of your team with a singular focus on the execution of your mission.  We manage all the core business functions, so you can concentrate on delivering the best possible specifications for your industry.
+    paragraph: We have assembled a set of tools, a team, and procedures that are well-suited to a small group of companies with a common interest to spin up a simple effort that results in a pre-standards body of work, as well as a large scale, well-funded project with aspirations of creating a worldwide standard. <br/><br/>We can guide you through the consortium lifecycle from formation to the ongoing governance, the technical collaboration, and the finance and administration. We consider ourselves a part of your team with a singular focus on the execution of your mission.  We manage all the core business functions, so you can concentrate on delivering the best possible specifications for your industry. x
     paragraph_aligh: left # center | left
     image: assets/images/home/section-icon.png
+    button_lable: "See More"
+    button_url: ""
   - layout: "block_icon_cards"
     card_per_line: 4
     cards:
       - title: Formation
         paragraph: There are a number of ways to effectively start a new technical standards project. We will guide you to the path that best fits your needs.
         image: assets/images/home/Formation.png
-        button_lable: "Lean More"
+        button_label: "Lean More"
         button_url: "www.google.com"
-        button_style: "button" # display style as link | button (default)
-        align: center # center | left | right
+        button_style: "button" # display style as link | butoon (default)
+        align: left # center | left | right
       - title: Governance
         paragraph: Technical consortia must comply with the laws that govern non-profits and they should be governed neutrally for the benefit of all their stakeholders.
         image: assets/images/home/Governance.png
