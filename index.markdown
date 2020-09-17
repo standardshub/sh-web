@@ -7,9 +7,9 @@ tagline:
   background_color: "#14011e"
   line1: For Standards Professionals
   line1_color: "#ffffff"
-  #line1_font_size: "20px" # default value = 20px
+  line1_font_size: "35px" # default value = 20px
   line2: By Standards Professionals
-  #line2_font_size: "40px" # default value = 40px
+  line2_font_size: "45px" # default value = 40px
   description: The Standards Hub team has long experience in the development of Technical Standards and we know how to run successful consortia that create and implement meaningful Technical Specifications. We understand volunteer-led organizations - their governance and their technical, operational, financial, and legal requirements. We focus on keeping costs down, service levels up, and on helping your subject matter experts get to “yes” on the important matters of a successful specification.  We understand that when we do an exceptional job managing the operations of an organization, the Board of Directors and members can build successful standards.
   description_color: "#ccdfff"
 blocks:
@@ -19,7 +19,7 @@ blocks:
     image: assets/images/home/photo_example2.png
     button_label: "Lean More"
     button_url: "https://www.google.com/"
-    button_style: "link" #display style as link | button(default)
+    button_style: "button" #display style as link | button(default)
   - layout: "block_image_text"
     title: How We Will Help You
     paragraph: Standard Hub has more than 150 specifications defined at the Open Mobile Alliance, IOT Smart Objects created at the IPSO Alliance, and developer tools  and resources that facilitate the development of products based on LightweightM2M (LwM2M), the IoT industry’s protocol for device management.
