@@ -37,7 +37,8 @@ blocks:
         paragraph: There are a number of ways to effectively start a new technical standards project. We will guide you to the path that best fits your needs.
         image: assets/images/home/Formation.png
         button_lable: "Lean More"
-        button_url: ""
+        button_url: "www.google.com"
+        button_style: "button" # display style as link | button (default)
       - title: Governance
         paragraph: Technical consortia must comply with the laws that govern non-profits and they should be governed neutrally for the benefit of all their stakeholders.
         image: assets/images/home/Governance.png
