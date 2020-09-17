@@ -14,6 +14,7 @@ blocks_before:
     cards:
       - image: /assets/images/home/service1.png
         title: Communications
+        align: center
       - image: /assets/images/home/service2.png
         title: Content Delivery
       - image: /assets/images/home/service3.png
