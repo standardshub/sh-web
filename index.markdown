@@ -39,6 +39,7 @@ blocks:
         button_lable: "Lean More"
         button_url: "www.google.com"
         button_style: "button" # display style as link | button (default)
+        align: center # center | left | right
       - title: Governance
         paragraph: Technical consortia must comply with the laws that govern non-profits and they should be governed neutrally for the benefit of all their stakeholders.
         image: assets/images/home/Governance.png
