@@ -4,10 +4,10 @@ title: About
 permalink: /about/
 order: 1
 blocks_before:
-  - layout: "block_text"
-    title: About Standard Hub
+  - layout: #"block_text"
+    title: #About Standard Hub
     paragraph:
-    image: ../assets/images/home/section-icon.png
+    image: #../assets/images/home/section-icon.png
 blocks_after:
   - layout: "block_image_cards"
     header:
@@ -49,4 +49,4 @@ blocks_after:
         button_url: "https://www.linkedin.com/in/nathandixon/"
 ---
 
-The Standards Hub team has long experience in the development of technical standards and we know how to run successful consortia that create and implement meaningful technical specifications. We understand volunteer-led organizations - their governance and their technical, operational, financial, and legal requirements. We focus on keeping costs down, service levels up, and on helping your subject matter experts get to “yes” on the important matters of a successful specification. We understand that when we do an exceptional job managing the operations of an organization, the Board of Directors and members can build successful standards.
+Our team members have contributed to the success of many well-known global consortia including: 3GPP, OMA SpecWorks, Joint Development Foundation, OneM2M, ETSI (several groups), OneDM, Enterprise Ethereum Alliance, Linux Foundation, Cloud Information Model, Open Manufacturing Platform, etc.
