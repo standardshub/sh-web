@@ -15,13 +15,13 @@ tagline:
 blocks:
   - layout: "block_text_image"
     title: Why We Can Help You
-    paragraph: Are you looking for a specifications factory that continually strives to optimize the delicate balance between the need for consensus and time to market through tools and simplified procedures, while empowering the people doing the work to complete a work item in the minimal amount of time. Markdown at [jekyllrb.com](https://jekyllrb.com/)
+    paragraph: There are a number of ways to effectively start a new technical standards project. We will guide you to the path that best fits your needs.
     image: assets/images/home/photo_example2.png
     button_lable: "Lean More"
-    button_url: "https://www.google.com/"
+    button_url: ""
   - layout: "block_image_text"
-    title: How We Will Help You
-    paragraph: Standard Hub has more than 150 specifications defined at the Open Mobile Alliance, IOT Smart Objects created at the IPSO Alliance, and developer tools  and resources that facilitate the development of products based on LightweightM2M (LwM2M), the IoT industry’s protocol for device management.
+    title: How We Can Help You
+    paragraph: Technical consortia must comply with the laws that govern non-profits and they should be governed neutrally for the benefit of all their stakeholders.
     image: assets/images/home/photo_example1.png
     button_lable: "See More"
     button_url: ""
@@ -74,7 +74,7 @@ blocks:
         button_lable: "Lean More"
         button_url: ""
   - layout: "block_text_cards"
-    card_per_line: 4
+    card_per_line: 2
     cards:
       - title: Formation
         paragraph: There are a number of ways to effectively start a new technical standards project. We will guide you to the path that best fits your needs.
