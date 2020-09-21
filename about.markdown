@@ -4,10 +4,10 @@ title: About
 permalink: /about/
 order: 10
 blocks_before:
-  - layout: "block_text"
-    title: About Standard Hub
-    paragraph:
-    image: ../assets/images/home/section-icon.png
+  - layout:  # "block_text" 
+    title: # title
+    paragraph: # paragraph
+    image: # image
 blocks_after:
   - layout: "block_image_cards"
     header:
@@ -47,6 +47,7 @@ blocks_after:
         paragraph: System Architect
         image: ../assets/images/about/Nathan_Dixon.jpeg
         button_url: "https://www.linkedin.com/in/nathandixon/"
+# the main block of text is below, with the option of having blocks before and after.
 ---
 
 The Standards Hub team has long experience in the development of technical standards and we know how to run successful consortia that create and implement meaningful technical specifications. We understand volunteer-led organizations - their governance and their technical, operational, financial, and legal requirements. We focus on keeping costs down, service levels up, and on helping your subject matter experts get to “yes” on the important matters of a successful specification. We understand that when we do an exceptional job managing the operations of an organization, the Board of Directors and members can build successful standards.
