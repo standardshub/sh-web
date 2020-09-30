@@ -23,11 +23,11 @@
       image = include.block.image image_size=include.block.image_size button_label=include.block.button_label button_url=include.block.button_url
       fluid=1 %}
   {% when "block_icon_cards" %}
-    {% include block_icon_cards.html header=include.block.header  cards=include.block.cards card_per_line=include.block.card_per_line   %}
+    {% include block_icon_cards.html header=include.block.header  cards=include.block.cards card_per_line=include.block.card_per_line image_size=include.block.image_size   %}
   {% when "block_icon_cards_fluid" %}
-    {% include block_icon_cards.html header=include.block.header  cards=include.block.cards card_per_line=include.block.card_per_line fluid=1  %}  
+    {% include block_icon_cards.html header=include.block.header  cards=include.block.cards card_per_line=include.block.card_per_line fluid=1 image_size=include.block.image_size  %}  
   {% when "block_logo_cards" %}
-    {% include block_icon_cards.html header=include.block.header  cards=include.block.cards card_per_line=include.block.card_per_line  logo=1  %}  
+    {% include block_icon_cards.html header=include.block.header  cards=include.block.cards card_per_line=include.block.card_per_line  logo=1 image_size=include.block.image_size %}  
   {% when "block_text_cards" %}
     {% include block_text_cards.html header=include.block.header  cards=include.block.cards card_per_line=include.block.card_per_line  %}
   {% when "block_image_cards" %}

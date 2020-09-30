@@ -15,7 +15,7 @@ blocks_before:
         type: "text"
       - label: "Surname"
         type: "text"
-      - label: "Phone"
+      - label: "Telephone number"
         type: "text"
       - label: "Function"
         type: "text"

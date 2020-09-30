@@ -34,6 +34,7 @@ blocks:
     image: assets/images/home/section-icon.png
   - layout: "block_icon_cards"
     card_per_line: 3
+    image_size: 180 # size of image
     cards:
       - title: Formationsss
         paragraph: There are a number of ways to effectively start a new technical standards project. We will guide you to the path that best fits your needs.
@@ -52,6 +53,7 @@ blocks:
         image: assets/images/home/service3.png
         button_label: "Lean More"
         button_url: ""
+        align: center
       - title: Membership Services
         paragraph: Now that you have settled on the mission, scope, and structure of your consortium, you need to connect with other stakeholders your industry.
         image: assets/images/home/service3.png
