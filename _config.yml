@@ -79,8 +79,7 @@ link_company: #to show company list in homepage footer section.
     url: "https://www.google.com/"
 
 # Contact Us
-action_url: "https://formspree.io/xknqrlvg"
-redirect_url: "http://127.0.0.1:4000/contactus/"
+google_form_url: "https://docs.google.com/forms/d/e/1FAIpQLScc9brLXKpBQKZf2hMhGif3XnrTeMcY4zGVcCtbE_WMfVg8wA/viewform?embedded=true"
 
 # Google services
 google_analytics: UA-178009148-1

@@ -309,7 +309,10 @@
 }
 /* Testimonial section end
 ============================================================================================ */
-
+.card-profile-image{
+  height: 255px;
+  object-fit: cover;
+}
 
 .card-blog{
   background: $white;
@@ -328,7 +331,7 @@
     }
 
     p{
-      margin-bottom: 0;
+      margin-bottom: 1rem;
     }
   }
   
