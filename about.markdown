@@ -17,35 +17,35 @@ blocks_after:
     cards:
       - title: Seth Newberry
         paragraph: Co-Founder
-        image: ../assets/images/about/Seth_Newberry.jpeg
+        image: ../assets/images/about/Seth_NewberryBW.jpeg
         button_url: "https://www.linkedin.com/in/seth-newberry-276164/"
       - title: Joaquin Prado
         paragraph: Co-Founder
-        image: ../assets/images/about/Joaquin_Prado.jpeg
+        image: ../assets/images/about/Joaquin_BWPrado.jpeg
         button_url: "https://www.linkedin.com/in/jpradocueva/"
       - title: Lisa Brady Robotti
         paragraph: Accounting
-        image: ../assets/images/about/Lisa_Brady_Robotti.jpeg
+        image: ../assets/images/about/Lisa_Brady_Robotti_BW.jpeg
         button_url: "https://www.linkedin.com/in/lisa-brady-robotti-0172b210/"
       - title: Michelle Janata
         paragraph: Member Services
-        image: ../assets/images/about/Michelle_Janata.jpeg
+        image: ../assets/images/about/Michelle_Janata_BW.jpeg
         button_url: "https://www.linkedin.com/in/michelle-janata-31120310/"
       - title: Elizabeth Rose
         paragraph: Marketing
-        image: ../assets/images/about/Elizabeth_Rose.jpeg
+        image: ../assets/images/about/Elizabeth_Rose_BW.jpeg
         button_url: "https://www.linkedin.com/in/elizhrosemarketing"
       - title: Sean Mcilroy
         paragraph: Program Manager
-        image: ../assets/images/about/Sean_Mcilroy.jpeg
+        image: ../assets/images/about/Sean_Mcilroy_BW.jpeg
         button_url: "https://www.linkedin.com/in/sean-mcilroy-bb3b5548/"
       - title: John Mudge
         paragraph: Program Manager
-        image: ../assets/images/about/John_Mudge.jpeg
+        image: ../assets/images/about/John_Mudge_BW.jpeg
         button_url: "https://www.linkedin.com/in/john-mudge-0b644b/"
       - title: Nathan Dixon
         paragraph: System Architect
-        image: ../assets/images/about/Nathan_Dixon.jpeg
+        image: ../assets/images/about/Nathan_Dixon_BW.jpeg
         button_url: "https://www.linkedin.com/in/nathandixon/"
 ---
 
