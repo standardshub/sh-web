@@ -249,7 +249,7 @@ blocks:
         button_url: ""
   - layout: "block_icon_cards"
     card_per_line: 4
-    image_size: 200 # size of image
+    image_size: 180 # size of image
     cards:
       - title: Formation
         #paragraph: There are a number of ways to effectively start a new technical standards project. We will guide you to the path that best fits your needs.
