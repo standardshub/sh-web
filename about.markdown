@@ -21,11 +21,11 @@ blocks_after:
         button_url: "https://www.linkedin.com/in/seth-newberry-276164/"
       - title: Joaquin Prado
         paragraph: Co-Founder
-        image: ../assets/images/about/Joaquin_BWPrado.jpg
+        image: ../assets/images/about/Joaquin_Prado_BW.jpg
         button_url: "https://www.linkedin.com/in/jpradocueva/"
       - title: Lisa Brady Robotti
         paragraph: Accounting
-        image: ../assets/images/about/Lisa_Brady_Robotti_BW.jpg
+        image: ../assets/images/about/Lisa_Robotti_BW.jpg
         button_url: "https://www.linkedin.com/in/lisa-brady-robotti-0172b210/"
       - title: Michelle Janata
         paragraph: Member Services
@@ -37,7 +37,7 @@ blocks_after:
         button_url: "https://www.linkedin.com/in/elizhrosemarketing"
       - title: Sean Mcilroy
         paragraph: Program Manager
-        image: ../assets/images/about/Sean_Mcilroy_BW.jpg
+        image: ../assets/images/about/Sean_Mcilroy_BW.png
         button_url: "https://www.linkedin.com/in/sean-mcilroy-bb3b5548/"
       - title: John Mudge
         paragraph: Program Manager
