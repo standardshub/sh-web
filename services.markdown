@@ -3,6 +3,7 @@ layout: page
 title: Services
 permalink: /services/
 order: 20
+parent: true
 blocks_before:
   - layout: "block_image_banner"
     image: /assets/images/banner/banner-contactus.jpg
