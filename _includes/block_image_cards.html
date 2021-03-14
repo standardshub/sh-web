@@ -12,10 +12,33 @@
       | plus: 0 %} {% if card_per >= 1 and card_per <= 4 %} {% assign col = 12 |
       divided_by: card_per %} {% assign divConClassName = "col-lg-" | append:
       col %} {% else %} {% assign divConClassName = "col-lg" %} {% endif %}
-      <div class="col-md-6 {{ divConClassName }}  mb-4 mb-lg-4">
+
+        {% assign image_size = include.image_size | plus: 0 %}
+        {% if image_size > 0 %}
+        {% assign style_image_size = "height: " | append: image_size  %}
+        {% assign style_image_size = style_image_size | append: "px"  %}
+        {% else %}
+        {% assign style_image_size = "height: " | append: "260px"  %}
+        {% endif %}
+
+        {% if item.align %}
+        {% assign divAlign = "text-" | append: item.align %}
+        {% else %}
+        {% assign divAlign = "text-left" %}
+        {% endif %}
+
+        {% if item.image_align %}
+        {% assign imageAlign = "text-" | append: item.image_align %}
+        {% else %}
+        {% assign imageAlign = "" %}
+        {% endif %}
+
+      <div class="col-md-6 {{ divConClassName }} {{ divAlign }}  mb-4 mb-lg-4">
         {% if item.button_label %}
         <div class="card-blog  h-100">
-          <img class="card-img rounded-0 card-profile-image" src="{{item.image}}" alt="" />
+          <div class="service-card-img {{ imageAlign }} rounded-0" style="{{style_image_size}}">
+            <img class="img-fluid w-auto h-100" src="{{item.image}}" alt="">
+          </div>
           <div class="card-blog-body">
             <h4>{{item.title}}</h4>
             <p>{{ item.paragraph }}</p>

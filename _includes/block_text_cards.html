@@ -16,8 +16,21 @@
         {% else %} 
           {% assign divConClassName = "col-lg" %}
         {% endif %}
+
+        {% assign image_size = include.image_size | plus: 0 %}
+        {% if image_size > 0 %}
+        {% assign style_image_size = "height: " | append: image_size  %}
+        {% assign style_image_size = style_image_size | append: "px"  %}
+        {% else %}
+        {% assign style_image_size = "height: " | append: "260px"  %}
+        {% endif %}
+
          <div class="{{ divConClassName }} col-xs-12 pt-4 pb-4  about-content">
-            <div class="text-{{item.image_align}}"><img class="" src="{{item.image}}" alt=""></div>
+            <div class="text-{{item.image_align}}">
+              <div class="service-card-img" style="{{style_image_size}}">
+                <img class="img-fluid w-auto h-100" src="{{item.image}}" alt="">
+              </div>
+            </div>
             <h2 style="height: 80px">{{ item.title }}</h2>
             <p>{{ item.paragraph }}</p>
             {% if item.button_style == 'link'  %}

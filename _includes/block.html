@@ -29,9 +29,9 @@
   {% when "block_logo_cards" %}
     {% include block_icon_cards.html header=include.block.header  cards=include.block.cards card_per_line=include.block.card_per_line  logo=1 image_size=include.block.image_size %}  
   {% when "block_text_cards" %}
-    {% include block_text_cards.html header=include.block.header  cards=include.block.cards card_per_line=include.block.card_per_line  %}
+    {% include block_text_cards.html header=include.block.header  cards=include.block.cards card_per_line=include.block.card_per_line  image_size=include.block.image_size %}
   {% when "block_image_cards" %}
-      {% include block_image_cards.html header=include.block.header cards=include.block.cards card_per_line=include.block.card_per_line  %}
+      {% include block_image_cards.html header=include.block.header cards=include.block.cards card_per_line=include.block.card_per_line  image_size=include.block.image_size %}
   {% when "block_image" %}
     {% include block_image.html title=include.block.title paragraph=include.block.paragraph
       image = include.block.image  button_label=include.block.button_label button_url=include.block.button_url 

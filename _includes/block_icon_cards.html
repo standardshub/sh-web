@@ -41,7 +41,14 @@
         {% assign divCardImg = "service-card-img" %}
         {% assign imgClass = "img-fluid w-auto h-100" %}
         {% endif %}
-        <div class="service-card h-100 text-{{ item.align || 'center' }}">
+
+        {% if item.align %}
+        {% assign divContent = "service-card h-100 text-" | append: item.align %}
+        {% else %}
+        {% assign divContent = "service-card h-100 text-center" %}
+        {% endif %}
+
+        <div class="{{ divContent }}">
           <div class="{{ divCardImg }}" style="{{style_image_size}}">
           <img class="{{ imgClass }}" src="{{item.image}}" alt="">
           </div>

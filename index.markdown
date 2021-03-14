@@ -89,11 +89,12 @@ blocks:
         align: center
   - layout: "block_text_cards"
     card_per_line: 3
+    image_size: 280 # size of image
     cards:
       - title: Formation
         paragraph: There are a number of ways to effectively start a new technical standards project. We will guide you to the path that best fits your needs.
-        #image: assets/images/home/section-icon.png
-        image_align: right # left|center|right
+        image: assets/images/home/Formation.png
+        image_align: center # left|center|right
         button_label: "Lean More"
         button_url: ""
         button_style: ""
@@ -150,15 +151,16 @@ blocks:
       #paragraph: paragraph text
       #image: assets/images/home/image.png
     card_per_line: 4
-    #image_size: 80 # size of image
+    image_size: 250 # size of image
     cards:
-      - title: Formation
+      - title: Formation 121212
         paragraph: There are a number of ways to effectively start a new technical standards project. We will guide you to the path that best fits your needs.
         image: assets/images/home/Formation.png
         button_label: "Lean More"
         button_url: ""
         button_style: "button" #display style as link | button(default)
-        align: center # center | left (default) | right
+        align: left # center | left (default) | right
+        image_align: center
       - title: Governance
         paragraph: Technical consortia must comply with the laws that govern non-profits and they should be governed neutrally for the benefit of all their stakeholders.
         image: assets/images/home/Governance.png

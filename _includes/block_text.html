@@ -7,12 +7,24 @@
   {% assign divClassName = "section-intro text-center pb-90px" %}
   {% assign divConClassName = "container" %}
 {% endif %}
+
+{% assign image_size = include.image_size | plus: 0 %}
+{% if image_size > 0 %}
+{% assign style_image_size = "height: " | append: image_size  %}
+{% assign style_image_size = style_image_size | append: "px"  %}
+{% else %}
+{% assign style_image_size = "height: " | append: "90px"  %}
+{% endif %}
+
+
 <section class="{{ sectionClassName }}">
     <div class="{{ divConClassName }}">
       <div class="{{ divClassName }}">
         {% assign imageCheck = include.image | strip_newlines %}
         {%- if imageCheck != "" -%}
-          <img class="section-intro-img" src="{{ include.image }}" alt="" style="width:{{ include.image_size }}">
+        <div style="{{style_image_size}}">
+          <img class="img-fluid w-auto h-100" src="{{ include.image }}" alt="">
+        </div>
         {%- endif -%}
         <h2>{{ include.title }}</h2>
         <p class="text-{{ include.paragraph_align }}">{{ include.paragraph }}</p>

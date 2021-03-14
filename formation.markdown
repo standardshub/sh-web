@@ -9,6 +9,7 @@ blocks_before:
     title: Formation
     paragraph:
     image: /assets/images/home/Formation.png
+    image_size: 240
 ---
 
 Formation
